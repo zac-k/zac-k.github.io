@@ -19,11 +19,55 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+deadlink {
+	color: #bfbfbf
+}
+
+.center-text {
+	text-align: center;
+}
+
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Palatino Linotype', Palatino, serif;
 	text-align:center;
 }
+
+h2 {
+    font-size: 2em;
+    font-family:'Palatino Linotype', Palatino, serif;
+}
+
+h2.cyan {
+    color:cyan;
+}
+
+h2.fuchsia {
+    color:DeepPink;
+}
+h2.orange {
+    color:orange;
+}
+h2.green {
+    color:green;
+}
+h2.pink {
+    color:hotpink;
+}
+h2.mustard {
+    color:olive;
+}
+
+span.black {
+	color:black;
+}
+
+
+#section img {
+	float:left
+}
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
