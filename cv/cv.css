@@ -14,9 +14,17 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: blue;
 }
 a:hover {
+    text-decoration: underline;
+}
+
+anav {
+    text-decoration: none;
+    color: #999;
+}
+anav:hover {
     text-decoration: underline;
 }
 
@@ -26,6 +34,13 @@ deadlink {
 
 .center-text {
 	text-align: center;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
 }
 
 h1 {
