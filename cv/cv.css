@@ -20,13 +20,11 @@ a:hover {
     text-decoration: underline;
 }
 
-anav {
+a.nav {
     text-decoration: none;
     color: #999;
 }
-anav:hover {
-    text-decoration: underline;
-}
+
 
 deadlink {
 	color: #bfbfbf
