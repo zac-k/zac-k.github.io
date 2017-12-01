@@ -28,6 +28,9 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+h2 {
+	line-height: 0;
+}
 p {
     font-size: 1.5em;
     line-height: 1.4em;
@@ -52,5 +55,9 @@ ul.posts li {
 }
 
 div.abstract {
-	margin-left: 5em;
+	margin-left: 10em;
+}
+
+div.name-align {
+	margin-left: 4.5em;
 }
