@@ -45,6 +45,8 @@ h1 {
     font-size: 3em;
     font-family:'Palatino Linotype', Palatino, serif;
 	text-align:center;
+	line-height:0.2em;
+	margin-top: 1em;
 }
 
 h2 {
@@ -70,6 +72,10 @@ h2.pink {
 }
 h2.mustard {
     color:olive;
+}
+
+h3 {
+	text-align:center;
 }
 
 span.black {
