@@ -43,8 +43,15 @@ deadlink {
 
 h1 {
     font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+
+
+h1.center{	
+	
     font-family:'Palatino Linotype', Palatino, serif;
-	text-align:center;
+	text-align:center;	
 	line-height:0.2em;
 	margin-top: 1em;
 }
