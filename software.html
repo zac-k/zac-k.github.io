@@ -27,7 +27,39 @@
 		</div><!-- /.container -->
 		
 		<h2>phaseimaging</h2>
-		<a href="https://github.com/zac-k/phaseimaging">link</a>
+		
+		<p>
+		<a href="https://github.com/zac-k/phaseimaging">Repository</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://zac-k.github.io/phaseimaging">Documentation</a>
+		<br>
+		This is a python library of phase imaging functions that is intended to be easy to use and highly flexible. Although it can be used for other imaging modalities, the terminology (as well as functionality) is currently targeted mostly at transmission electron microscopy. I plan to expand it to a wider range of applications in the near future, starting with coherent x-ray imaging.
+		<br>
+		Install with:<br>
+		<code>pip install git+https://github.com/zac-k/phaseimaging.git</code>
+		</p>
+		
+		<h2>specimen-generator</h2>
+		
+		<p>
+		<a href="https://github.com/zac-k/specimen-generator">Repository</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://zac-k.github.io/specimen-generator">Documentation</a>
+		<br>
+		This is a set of python scripts for use with the 3D modelling software <a href="http://blender.org">Blender</a>. These scripts generate specimen files that are compatible with the phaseimaging library. One script allows for generating a scalar binary specimen mask from a 3D model, another enables generation of a vector-valued moment distribution file, in additional to the scalar specimen mask, from arrow objects inside the Blender viewport. The final script procedurally generates an arbitrary number of specimens. This is the script that I used to generate specimens for my <a href="https://arxiv.org/abs/1709.09940">research on using neural networks for phase retrieval</a>.
+		<br>
+		</p>
+		
+		<h2>temsim</h2>
+		
+		<p>
+		<a href="./software/temsim.zip">Download</a> 
+		<br>
+		This is a realtime transmission electron microscope (TEM) simulator written in C# and developed in <a href="https://unity3d.com/">Unity</a>. The TEM simulated here is an FEI Tecnai T20. It's not a highly polished, commercial quality, application, but it may be of some use to anyone who wants to familiarise themselves with the basic operation of a TEM; something like this would have been very handy when I had to familiarise myself with these controls in order to gain the right to operate a TEM.
+
+		I haven't written any documentation for it at the moment, so just play around with it. I strongly suggest to run it at 1920x1080 resolution for best quality. Even though the background is a static image, most of the controls can be clicked (or clicked and dragged for rotary knobs, as well as the joystick). Performance should be okay at the default resolution, but you can click the minus sign next to "resolution" to reduce it for improved performance, or click the plus to increase it if your PC can handle it. Click the "detach" button if the aliasing on the settings. You can take images and perform phase retrieval on them. The settings are all over the place, as I was in the middle of moving things around the last time I was working on this. There is an "open controls" menu in the top left, which used to have a lot of settings in it, but now only has the objective aperture. Anything that has a control on the physical panel at the bottom middle has been put there. The resolution setting is on the left-hand panel on the monitor on the right, and noise and intensity levels can be accessed via the "settings" button in the centre of the monitor. Be aware that if you click the "noise" button, it will turn off the noise but it's not obvious that it's pressed, so if changing the noise level slider is having no effect, click the noise button again.
+		<br>
+		</p>
 		
 		<footer>
     		<ul>
