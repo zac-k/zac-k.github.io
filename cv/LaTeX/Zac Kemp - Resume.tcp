@@ -3,7 +3,7 @@ Type=TeXnicCenterProjectInformation
 Version=4
 
 [ProjectInfo]
-MainFile=resume.tex
+MainFile=Zac Kemp - Resume.tex
 UseBibTeX=1
 UseMakeIndex=0
 ActiveProfile=XeLaTeX ⇨ PDF
