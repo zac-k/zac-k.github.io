@@ -55,7 +55,8 @@ ul.posts li {
 }
 
 p.abstract {
-	margin-left: 10em;
+	margin-left: 3em;
+	margin-right: 0;
 }
 
 div.name-align {
