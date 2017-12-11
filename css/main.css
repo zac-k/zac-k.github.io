@@ -1,20 +1,28 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 0px auto;
 	background-color: white;
 	/*background-image: url("../content/background2.png");*/
 	background-repeat: repeat-x;
+	/*border: 2px solid gray;
+    border-radius: 5px;*/
+}
+
+#main {
+	margin-left: 10%;
+	width:80%;	
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
+	margin-bottom:0;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
     color: blue;
@@ -41,7 +49,7 @@ h1.center{
 	
     font-family:'Palatino Linotype', Palatino, serif;
 	text-align:center;	
-	line-height:0.2em;
+	line-height:0.9em;
 	margin-top: 1em;
 }
 
@@ -51,6 +59,7 @@ h1.center{
     height:198px;
 	background-position: left 15% top 5px, right, left, right;
 	background-repeat: no-repeat;
+	padding-left: 0;
 	/*background-color: #00b0bb;*/
 	
 }
