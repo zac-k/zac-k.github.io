@@ -49,8 +49,9 @@ h1.center{
     background-image: url('../content/banner/name.png'), url('../content/banner/photo.png'), url('../content/banner/banner_L.png'),url("../content/banner/banner_R.png");
     background-size: 274px, 235px, 711px, 711px;
     height:198px;
-	background-position:center, right, left, right;
+	background-position: left 15% top 5px, right, left, right;
 	background-repeat: no-repeat;
+	/*background-color: #00b0bb;*/
 	
 }
 
