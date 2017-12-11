@@ -1,6 +1,8 @@
 body {
     margin: 60px auto;
     width: 70%;
+	background-color: white;
+	/*background-image: url("../content/background.png");*/
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -28,9 +30,79 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+
+header {
+}
+
+
+h1.center{	
+	
+    font-family:'Palatino Linotype', Palatino, serif;
+	text-align:center;	
+	line-height:0.2em;
+	margin-top: 1em;
+}
+
+#banner {
+    background-image: url('../content/banner_R.png'), url('../content/banner_L.png');
+    background-size: 235px, 711px;
+    height:198px;
+	background-position:right, left;
+	background-repeat: no-repeat;
+	
+}
+
+/*#banner {
+    background-image:url('../content/banner_new.png');
+    background-size:711px;
+    height:198px;
+	background-position:center;
+	background-repeat: no-repeat;
+	
+}*/
+
 h2 {
 	margin-top: 3em;
 }
+
+
+h2.cv {
+    font-size: 2em;
+    font-family:'Palatino Linotype', Palatino, serif;
+}
+
+h2.cyan {
+    color:cyan;
+}
+
+h2.fuchsia {
+    color:DeepPink;
+}
+h2.orange {
+    color:orange;
+}
+h2.green {
+    color:green;
+}
+h2.pink {
+    color:hotpink;
+}
+h2.mustard {
+    color:olive;
+}
+
+h3 {
+	text-align:center;
+}
+
+span.black {
+	color:black;
+}
+
+#section img {
+	float:left
+}
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
@@ -61,4 +133,20 @@ p.abstract {
 
 div.name-align {
 	margin-left: 4.5em;
+}
+
+#picture {
+		float:right;
+	}
+	
+	
+.center-text {
+	text-align: center;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
 }
