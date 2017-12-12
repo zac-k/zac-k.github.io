@@ -31,27 +31,12 @@
 					</p>
 				</div><!-- /.blurb -->
 			</div><!-- /.container -->
-			 <form action="contact_form_send.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
+			<form method="POST" action="http://formspree.io/zachary.kemp@monash.edu">
+  <input type="email" name="Email: " placeholder="Your contact email">
+	<input type="subject" name="Subject: " placeholder="Subject of correspondence">
+  <textarea name="Message: " placeholder="Your message"></textarea>
+  <button type="submit">Send</button>
+</form>
 			<footer>
 				<ul>
 					<li><a href="mailto:zachary.kemp@monash.edu">email</a></li>
@@ -63,5 +48,7 @@
 			
 			</footer>
 		</div>
+		
+		
 	</body>
 </html> 
