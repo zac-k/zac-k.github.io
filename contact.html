@@ -31,61 +31,27 @@
 					</p>
 				</div><!-- /.blurb -->
 			</div><!-- /.container -->
-			<form name="htmlform" method="post" action="contact_form_send.php">
-			<h2>
-				<table width="450px">
-				</tr>
-				<tr>
-				 <td valign="top">
-				  <label for="first_name">First Name *</label>
-				 </td>
-				 <td valign="top">
-				  <input  type="text" name="first_name" maxlength="50" size="30">
-				 </td>
-				</tr>
-				 
-				<tr>
-				 <td valign="top"">
-				  <label for="last_name">Last Name *</label>
-				 </td>
-				 <td valign="top">
-				  <input  type="text" name="last_name" maxlength="50" size="30">
-				 </td>
-				</tr>
-				<tr>
-				 <td valign="top">
-				  <label for="email">Email Address *</label>
-				 </td>
-				 <td valign="top">
-				  <input  type="text" name="email" maxlength="80" size="30">
-				 </td>
-				 
-				</tr>
-				<tr>
-				 <td valign="top">
-				  <label for="telephone">Telephone Number</label>
-				 </td>
-				 <td valign="top">
-				  <input  type="text" name="telephone" maxlength="30" size="30">
-				 </td>
-				</tr>
-				<tr>
-				 <td valign="top">
-				  <label for="comments">Comments *</label>
-				 </td>
-				 <td valign="top">
-				  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-				 </td>
-				 
-				</tr>
-				<tr>
-				 <td colspan="2" style="text-align:center">
-				  <input type="submit" value="Submit"> 
-				 </td>
-				</tr>
-				</table>
-				</h2>
-				</form>
+			 <form action="contact_form_send.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
 			<footer>
 				<ul>
 					<li><a href="mailto:zachary.kemp@monash.edu">email</a></li>
