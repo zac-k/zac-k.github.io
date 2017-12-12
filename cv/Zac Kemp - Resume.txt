@@ -1,0 +1,118 @@
+﻿Zachary Kemp
+BSc (Hons), PhD (Physics)
+ 
+Address: 	 	 
+3/9 Newman
+Street
+Ballarat East
+VIC 3350	
+
+Phone:
+0412 457 974	
+
+Email:
+zachary.kemp@monash.edu
+
+Web:
+zac-k.github.io
+
+
+
+Education
+
+2012–2016	Doctor of Philosophy (Physics)	Monash University, Clayton
+		thesis title:	“Sources and effects of errors in vector field electron tomography”
+		description:	This work addresses the accuracy of methods used to reconstruct three-dimensional 
+				electromagnetic vector fields using transmission electron microscopy.
+		
+2007–2011	Bachelor of Science (Hons)	Monash University, Clayton
+		thesis title:	“Tomographic reconstruction of vector fields in the presence of noise”
+		description:	This work examines the noise-stability of the vector tomography reconstruction process.
+		majors:	physics, pure mathematics
+		minors:	astrophysics
+
+
+
+Experience
+
+2017–present	Teaching Associate (Level Three)	Monash University, Clayton
+		PHS3000–Laboratory	
+		
+2012–present	Teaching Associate (Level Two)	Monash University, Clayton
+		PHS2011–Quantum Concepts and Technologies	
+		PHS2022–Electromagnetism, Light, and Entropy	
+		PHS2061–Quantum and Thermal Physics	
+		PHS2062–Electromagnetism and Optics	
+2010–2011	Teaching Associate (Level One)	Monash University, Clayton
+		PHS1011–Classical Physics and Relativity	ENG1080–Foundation Physics
+		PHS1021–Radiological Physics	PHS1042–Environmental Physics
+		PHS1022–Fields and Quantum Physics	BMS1031–Medical Biophysics
+
+
+
+Awards
+
+2012–2015	Dean’s PostGraduate Research Scholarship	Monash University, Clayton
+		Awarded to students pursuing a Higher Degree by Research after achieving first class honours.
+
+
+
+Publications
+
+2017	Propagation based phase retrieval using artificial neural networks
+	ZDC Kemp
+	(in peer review)
+2016	Sources and effects of errors in vector field electron tomography
+	ZDC Kemp
+	PhD thesis, Monash University (2016)
+2016	Effect of specimen orientation on the accuracy of vector field electron tomography
+	ZDC Kemp, DM Paganin, TC Petersen, MJ Morgan
+	Optics Express 24.20 (2016): 22366
+2014	Analysis of noise-induced errors in vector-field electron tomography
+	ZDC Kemp, TC Petersen, DM Paganin, KM Spiers, M Weyland, MJ Morgan
+	Physical Review A 90.2 (2014): 023859
+2011	Tomographic reconstruction of vector fields in the presence of noise
+	ZDC Kemp
+	Honours thesis, Monash University (2011)
+
+
+
+Interests and skills
+
+	Physics/mathematics
+	Error analysis, tomography, phase retrieval, image simulation, numerical methods, image processing, electron optics, 
+	machine learning, mathematical modelling
+
+	programming and software
+	C++, MATLAB, python, LaTeX, Photoshop, Blender
+	other skills
+	technical writing, teaching, using scientific instrumentation
+	laboratory topics taught
+	optical spectroscopy, γ-spectroscopy, nuclear decay, Fourier analysis, operational amplifiers, dynamics, buoyancy, 
+	photoelectric effect, AC signal filters, Ramsauer-Townsend effect, charge-to-mass ratio of electron, microwave optics, 
+	Hall effect in water, and many others
+
+	personal interests
+	music production, 3D modelling, game development
+
+
+
+Referees
+
+	Prof. David Paganin	PhD supervisor
+	david.paganin@monash.edu
+	(03) 9396 1574
+	
+	Dr Tim Petersen	PhD supervisor
+	timothy.petersen@monash.edu
+	(03) 9905 9765
+	
+	Prof. Michael Morgan	PhD supervisor
+	michael.j.morgan@monash.edu
+	(03) 9905 3645
+	
+	Theo Hughes	manager
+	theo.hughes@monash.edu
+	(03) 9905 1602
+	
+
