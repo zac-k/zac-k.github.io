@@ -230,3 +230,7 @@ div.name-align {
 .alignright {
 	float: right;
 }
+
+.aligncenter {
+	float: center;
+}
