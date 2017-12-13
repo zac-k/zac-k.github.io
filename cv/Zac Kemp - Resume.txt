@@ -1,11 +1,18 @@
-﻿Zac Kemp
-BSc (Hons), PhD (Physics)
- 
-Address: 	 	 
+﻿
+###############################
+########### Zac Kemp ##########
+## BSc (Hons), PhD (Physics) ##
+###############################
+
+
+
+Contact details
+----------------------- 
+Address: 	 
 3/9 Newman
 Street
 Ballarat East
-VIC 3350	
+VIC 3350
 
 Phone:
 0412 457 974	
@@ -15,11 +22,10 @@ zachary.kemp@monash.edu
 
 Web:
 zac-k.github.io
-
-
+----------------------- 
 
 Education
-
+-----------------------------------------------------------------------------------------------------------------------
 2012–2016	Doctor of Philosophy (Physics)	Monash University, Clayton
 		thesis title:	“Sources and effects of errors in vector field electron tomography”
 		description:	This work addresses the accuracy of methods used to reconstruct three-dimensional 
@@ -30,11 +36,11 @@ Education
 		description:	This work examines the noise-stability of the vector tomography reconstruction process.
 		majors:	physics, pure mathematics
 		minors:	astrophysics
-
+-----------------------------------------------------------------------------------------------------------------------
 
 
 Experience
-
+-------------------------------------------------------------------------------------------
 2017–present	Teaching Associate (Level Three)	Monash University, Clayton
 		PHS3000–Laboratory	
 		
@@ -47,18 +53,18 @@ Experience
 		PHS1011–Classical Physics and Relativity	ENG1080–Foundation Physics
 		PHS1021–Radiological Physics	PHS1042–Environmental Physics
 		PHS1022–Fields and Quantum Physics	BMS1031–Medical Biophysics
-
+------------------------------------------------------------------------------------------
 
 
 Awards
-
+-------------------------------------------------------------------------------------------------------------
 2012–2015	Dean’s PostGraduate Research Scholarship	Monash University, Clayton
 		Awarded to students pursuing a Higher Degree by Research after achieving first class honours.
-
+-------------------------------------------------------------------------------------------------------------
 
 
 Publications
-
+------------------------------------------------------------------------------------------
 2017	Propagation based phase retrieval using artificial neural networks
 	ZDC Kemp
 	(in peer review)
@@ -74,31 +80,33 @@ Publications
 2011	Tomographic reconstruction of vector fields in the presence of noise
 	ZDC Kemp
 	Honours thesis, Monash University (2011)
-
+------------------------------------------------------------------------------------------
 
 
 Interests and skills
-
-	Physics/mathematics
-	Error analysis, tomography, phase retrieval, image simulation, numerical methods, image processing, electron optics, 
+------------------------------------------------------------------------------------------------------------------------------
+	physics/mathematics:
+	error analysis, tomography, phase retrieval, image simulation, numerical methods, image processing, electron optics, 
 	machine learning, mathematical modelling
 
-	programming and software
+	programming and software:
 	C++, MATLAB, python, LaTeX, Photoshop, Blender
-	other skills
+
+	other skills:
 	technical writing, teaching, using scientific instrumentation
-	laboratory topics taught
+
+	laboratory topics taught:
 	optical spectroscopy, γ-spectroscopy, nuclear decay, Fourier analysis, operational amplifiers, dynamics, buoyancy, 
 	photoelectric effect, AC signal filters, Ramsauer-Townsend effect, charge-to-mass ratio of electron, microwave optics, 
 	Hall effect in water, and many others
 
-	personal interests
+	personal interests:
 	music production, 3D modelling, game development
-
+------------------------------------------------------------------------------------------------------------------------------
 
 
 Referees
-
+----------------------------------------------
 	Prof. David Paganin	PhD supervisor
 	david.paganin@monash.edu
 	(03) 9396 1574
@@ -114,5 +122,5 @@ Referees
 	Theo Hughes	manager
 	theo.hughes@monash.edu
 	(03) 9905 1602
-	
+----------------------------------------------	
 
