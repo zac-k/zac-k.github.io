@@ -79,6 +79,11 @@ nav li:hover {
 	background-color: #23e1e1
 }
 
+#bar{
+	 position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 
 .links{
 	background: white;
@@ -108,7 +113,12 @@ footer ul li {
 }
 
 
-
+#bug_feature {
+ position:absolute;
+ top:200px;
+ left:600px;
+ width:450px;
+}
 
 
 

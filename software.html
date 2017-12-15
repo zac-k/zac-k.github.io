@@ -3,23 +3,49 @@
 	<head>
 		<title>Zac Kemp - Sofware</title>
 		<!-- link to main stylesheet -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script>
+		
+			function textHide(){
+				if($(window).width() < 1050 || $(window).scrollTop() > 150) {
+						$("#bug_feature").hide();
+				}else {
+					$("#bug_feature").show();
+				}
+			}
+			
+			$(document).ready(function(){
+				textHide();
+				$(window).resize(function(){
+					textHide();
+				});
+				$(window).scroll(function(){
+					textHide();
+				});
+			});
+		</script>
 	</head>
 	
 	<body>
-	<div id=banner></div>
-			<nav>
-    		<ul>
-        		<li><a href="index.html">Home</a></li>	        	
-					<li><a href="cv.html">CV</a></li>
-					<li><a href="publications.html">Publications</a></li>
-					<li class="active"><a class="active" href="software.html">Software</a></li>
-					<li><a href="media.html">Media</a></li>
-					<li><a href="contact.html">Contact</a></li>
-        		<!-- <li><deadlink>Blog</deadlink></li> -->
-    		</ul>
-		</nav>
+		<div id=banner></div>
+			<nav id=bar>
+				<ul>
+					<li><a href="index.html">Home</a></li>	        	
+						<li><a href="cv.html">CV</a></li>
+						<li><a href="publications.html">Publications</a></li>
+						<li class="active"><a class="active" href="software.html">Software</a></li>
+						<li><a href="media.html">Media</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					<!-- <li><deadlink>Blog</deadlink></li> -->
+				</ul>
+			</nav>
 	<div id=main>
+	
+	
+
+
+		<img src="content/bug_feature.png" id="bug_feature">
 
 			<br>
 		<div class="container">
