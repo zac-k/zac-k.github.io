@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0px auto;
 	background-color: white;
@@ -10,6 +12,7 @@ body {
 
 html {
 	overflow-y: scroll;
+	overflow-x: scroll;
 }
 
 
@@ -85,6 +88,12 @@ nav li:hover {
   top: 0;
 }
 
+.sticky{
+	position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+}
+
 .links{
 	background: white;
 }
@@ -120,7 +129,9 @@ footer ul li {
  width:450px;
 }
 
-
+.fade {
+  opacity: 1;
+}
 
 h1 {
     font-size: 3em;

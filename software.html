@@ -5,26 +5,9 @@
 		<!-- link to main stylesheet -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script>
-		
-			function textHide(){
-				if($(window).width() < 1050 || $(window).scrollTop() > 150) {
-						$("#bug_feature").hide();
-				}else {
-					$("#bug_feature").show();
-				}
-			}
-			
-			$(document).ready(function(){
-				textHide();
-				$(window).resize(function(){
-					textHide();
-				});
-				$(window).scroll(function(){
-					textHide();
-				});
-			});
-		</script>
+
+
+<script type="text/javascript" src="scripts/fade.js"></script>
 	</head>
 	
 	<body>
@@ -45,7 +28,7 @@
 	
 
 
-		<img src="content/bug_feature.png" id="bug_feature">
+		<img src="content/bug_feature.png" id="bug_feature" class="fade">
 
 			<br>
 		<div class="container">
