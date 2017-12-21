@@ -13,7 +13,7 @@ body {
 
 html {
 	overflow-y: scroll;
-	overflow-x: scroll;
+	overflow-x: auto;
 }
 
 
@@ -154,7 +154,7 @@ h1.center{
 #banner {
     background-image: url('../content/banner/name_no_shadow.png'), url('../content/banner/photo_no_shadow.png'), url('../content/banner/banner_L_no_shadow.png'),url("../content/banner/banner_R_no_shadow.png");
     background-size: 274px, 235px, 711px, 711px;
-    height:174px;
+    height:172px;
 	background-position: left 15% top 5px, right, left, right;
 	background-repeat: no-repeat;
 	padding: 0;
