@@ -8,6 +8,7 @@ body {
 	/*border: 2px solid gray;
     border-radius: 5px;*/	
 
+
 }
 
 html {
@@ -158,9 +159,11 @@ h1.center{
 	background-repeat: no-repeat;
 	padding: 0;
 	margin: 0;
-	/*background-color: #00b0bb;*/
+	background-attachment: fixed;
 	
 }
+
+
 
 /*#banner {
     background-image:url('../content/banner_new.png');
