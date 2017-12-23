@@ -3,6 +3,7 @@
 body {
     margin: 0px auto;
 	background-color: white;
+	padding-bottom:50px;
 	/*background-image: url("../content/background2.png");*/
 	background-repeat: repeat-x;
 	/*border: 2px solid gray;
@@ -264,6 +265,10 @@ div.name-align {
 }
 .alignright {
 	float: right;
+}
+
+.section {
+	position:fixed;
 }
 
 
