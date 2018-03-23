@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Zac Kemp - Resume.tex
 
 [Frame0_View0,0]
-TopLine=186
-Cursor=4936
+TopLine=147
+Cursor=4792
 
 [SessionInfo]
 FrameCount=1
