@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6745 64-bit) (preloaded format=xelatex 2018.8.25)  1 MAY 2019 16:34
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6745 64-bit) (preloaded format=xelatex 2018.8.25)  1 MAY 2019 17:12
 entering extended mode
 **"./Zac Kemp - Resume.tex"
 ("Zac Kemp - Resume.tex"
@@ -1511,7 +1511,7 @@ Package Fancyhdr Warning: \footskip is too small (0.0pt):
 
 [2
 
-] [3]
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
  ("Zac Kemp - Resume.aux")
@@ -1526,10 +1526,10 @@ Package logreq Info: Writing requests to '"Zac Kemp - Resume".run.xml'.
 Here is how much of TeX's memory you used:
  40600 strings out of 427798
  768344 string characters out of 3151797
- 1302401 words of memory out of 3000000
+ 1302402 words of memory out of 3000000
  44128 multiletter control sequences out of 15000+200000
  536124 words of font info for 100 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  73i,16n,89p,1166b,742s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Zac Kemp - Resume.pdf (3 pages).
+Output written on Zac Kemp - Resume.pdf (2 pages).
