@@ -284,6 +284,8 @@ div.name-align {
   width:32%;
   /* height=130; */
   /*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+  border: 1px solid white; /* Mouse-over doesn't work exactly right without a border */
+  
 }
 
 /* Tooltip text */
@@ -303,7 +305,40 @@ div.name-align {
   position: absolute;
   width: 300%;
   z-index: 1;
+  
+  /* Fade */
+  opacity: 0;
+  transition: opacity 1s;
+  /* Make tooltip ignore self-hover */
+  pointer-events: none;
+  
 }
+
+.tooltip .tooltiplink {
+  visibility: hidden;
+  background-color: #AEFBFF;
+  border: 5px solid #005c61;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  border-style:visible;
+  font-size:20px;
+  /*display: inline-block;*/
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 25%;
+  z-index: 2;
+  
+  /* Fade */
+  opacity: 1;
+  transition: opacity 2s;
+	
+}
+
 
 .pos_c{
 	left:-100%;
@@ -317,7 +352,14 @@ div.name-align {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
+  opacity: 1;
+  /* transition-delay: 0.5s; */
 }
 
+.tooltip:hover .tooltiplink {
+  visibility: visible;
+  opacity: 1;
+  /* transition-delay: 0.5s; */
+}
 
 
