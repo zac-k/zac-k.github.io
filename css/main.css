@@ -316,20 +316,20 @@ div.name-align {
 
 .tooltip .tooltiplink {
   visibility: hidden;
-  background-color: #AEFBFF;
-  border: 5px solid #005c61;
+  background-color: white;
+  border: 2px dotted #005c61;
   color: black;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
   border-style:visible;
-  font-size:20px;
+  /* font-size:20px; */
   /*display: inline-block;*/
  
   /* Position the tooltip text - see examples below! */
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 10%;
+  right: 10%;
   width: 25%;
   z-index: 2;
   
