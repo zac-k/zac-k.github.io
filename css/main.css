@@ -301,7 +301,17 @@ div.name-align {
  
   /* Position the tooltip text - see examples below! */
   position: absolute;
+  width: 300%;
   z-index: 1;
+}
+
+.pos_c{
+	left:-100%;
+	
+}
+
+.pos_r{
+	left:-200%;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
