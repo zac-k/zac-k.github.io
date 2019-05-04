@@ -16,6 +16,18 @@
 					window.addEventListener('message', function(event) { 
 						var frameHeight = event.data;
 						document.getElementById("mainFrame").height = frameHeight;
+						<!-- // IMPORTANT: Check the origin of the data!  -->
+						<!-- if (~event.origin.indexOf('zac-k.github.io')) {  -->
+							<!-- // The data has been sent from your site  -->
+
+							<!-- // The data sent with postMessage is stored in event.data  -->
+							<!-- document.getElementById("mainFrame").height = frameHeight;  -->
+						<!-- } else {  -->
+							<!-- // The data hasn't been sent from your site!  -->
+							<!-- // Be careful! Do not use it.  -->
+							<!-- return;  -->
+						<!-- }  -->
+						
 					}); 	
 					$.stellar({
 						horizontalScrolling: false,

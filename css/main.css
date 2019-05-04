@@ -272,3 +272,42 @@ div.name-align {
 }
 
 
+/* .music { */
+	/* width: "100%";  */
+   /* height: "130"; */
+/* } */
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  width:32%;
+  /* height=130; */
+  /*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #AEFBFF;
+  border: 5px solid #005c61;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  border-style:visible;
+  font-size:25px;
+  /*display: inline-block;*/
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
