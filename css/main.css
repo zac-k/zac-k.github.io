@@ -299,6 +299,7 @@ div.name-align {
   border-radius: 6px;
   border-style:visible;
   font-size:25px;
+  /* bottom: -20%; */
   /*display: inline-block;*/
  
   /* Position the tooltip text - see examples below! */
