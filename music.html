@@ -38,19 +38,19 @@
 			);
 		</script>
 		
-		<!-- <script>
-			var myIframe = document.getElementById('myIframe');
+		
 
-window.addEventListener('click', resizeIframe);
-window.addEventListener('scroll', resizeIframe);
-window.addEventListener('resize', resizeIframe);
-
-myIframe.contentWindow.addEventListener('click', resizeIframe);
-
-function resizeIframe() {
-  console.log('resize!');
-}
-		</script> -->
+		<!-- <script> -->
+			<!-- function SetVolume(val) -->
+			<!-- { -->
+				<!-- var player = document.getElementById('hearthis_at_track_3051314'); -->
+				<!-- console.log('Before: ' + player.volume); -->
+				<!-- player.volume = val / 100; -->
+				<!-- console.log('After: ' + player.volume); -->
+			<!-- } -->
+		<!-- </script> -->
+		
+	
 		
 		
 		
@@ -71,6 +71,7 @@ function resizeIframe() {
 					<li class="active"><a class="active" href="music.html">Music</a></li>
 					<li><a href="media.html">Other Media</a></li>
 					<li><a href="contact.html">Contact</a></li>
+					<li class="right-align"><a href="help.html">Help</a></li>
         		<!-- <li><deadlink>Blog</deadlink></li> -->
     		</ul>
 		</nav>
@@ -80,6 +81,8 @@ function resizeIframe() {
 		<p>
 		Just some of my music&mdash;all produced using softsynths (<i>Spire</i> is my current go-to) and a DAW (usually Bitwig at the moment). Stylistically, most of my music falls under the broad umbrella of "trance", but I've been branching out a bit lately with some house, drum and bass, and other genres (not all posted yet). Except where otherwise stated, vocals are from royalty-free sample packs. Hover over a track to see my own thoughts about it. 
 		</p>
+		
+		<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>
 		
 		
 		
