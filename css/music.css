@@ -7,7 +7,7 @@
 }
 
 .fullwidth ul.playlist li.sm2_playing.half canvas.rendered,.fullwidth ul.playlist li.sm2_paused.half canvas.rendered,ul.playlist.top li canvas.rendered,ul.playlist li.highlight canvas.rendered {
-	opacity:0.5;
+	opacity:1;
 }
 
 .fullwidth ul.playlist li.with-image,ul.playlist.top li.with-image {
