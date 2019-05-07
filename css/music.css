@@ -7,7 +7,7 @@
 }
 
 .fullwidth ul.playlist li.sm2_playing.half canvas.rendered,.fullwidth ul.playlist li.sm2_paused.half canvas.rendered,ul.playlist.top li canvas.rendered,ul.playlist li.highlight canvas.rendered {
-	opacity:1;
+	opacity:0.5;
 }
 
 .fullwidth ul.playlist li.with-image,ul.playlist.top li.with-image {
@@ -66,7 +66,7 @@ ul.playlist li .note{
 }
 
 #global_content .fullwidth .highlight:before{
-	content:" ";position:relative;left:-130px;top:-15px;right:-20px;bottom:-15px;z-index:0;background-position:center !important;background-size:cover !important;opacity:1;background:#000;
+	content:" ";position:absolute;left:-130px;top:-15px;right:-20px;bottom:-15px;z-index:0;background-position:center !important;background-size:cover !important;opacity:1;background:#000;
 }
 
 #global_content .fullwidth .highlight:after{
