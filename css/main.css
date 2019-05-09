@@ -85,9 +85,15 @@ nav li:hover {
 }
 
 #bar{
-	 position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.stickybar {
+	position: fixed;
+	top: 30;
+	width: 100%;
 }
 
 .sticky{
