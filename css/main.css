@@ -294,6 +294,10 @@ div.name-align {
   
 }
 
+.tt_menu {
+	position: absolute;
+}
+
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
