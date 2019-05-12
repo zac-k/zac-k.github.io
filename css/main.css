@@ -90,6 +90,12 @@ nav li:hover {
     top: 0;
 }
 
+#musicbar{
+	position: -webkit-sticky;
+    position: sticky;
+    top: 25px;
+}
+
 .stickybar {
 	position: fixed;
 	top: 30;
@@ -319,30 +325,28 @@ div.tooltip {
   font-size:25px;
   /* bottom: -20%; */
   /*display: inline-block;*/
+    position: absolute;
  
 
   z-index: 1;
   
   /* Fade */
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.5s;
   /* Make tooltip ignore self-hover */
   pointer-events: none;
   
 }
 
 li.tooltip .tooltiptext {
-    position: fixed;
-    padding: 2em;
     left: 50%;
-    top: 35%;
-    transform: translateX(-50%);
-	width: 70%;
+    top: 50%;
+    transform: translate(-50%, 20px);
+	width: 100%;
 	
 }
 
 div.tooltip .tooltiptext {  /* Position the tooltip text - see examples below! */
-  position: absolute;
   width: 300%;
 	
 }
@@ -368,7 +372,7 @@ div.tooltip .tooltiptext {  /* Position the tooltip text - see examples below! *
   
   /* Fade */
   opacity: 1;
-  transition: opacity 2s;
+  transition: opacity 1s;
 	
 }
 
