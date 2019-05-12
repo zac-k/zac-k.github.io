@@ -316,7 +316,7 @@ div.tooltip {
 .tooltip .tooltiptext {
   visibility: hidden;
   background-color: #AEFBFF;
-  border: 5px solid #005c61;
+  border: 1px solid #005c61;
   color: black;
   text-align: center;
   padding: 5px 0;
@@ -336,6 +336,31 @@ div.tooltip {
   /* Make tooltip ignore self-hover */
   pointer-events: none;
   
+}
+
+.tooltip .tooltiptext:after,
+.tooltip .tooltiptext:before {
+    left: 14%;
+    top: 0%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.tooltip .tooltiptext:after {
+    border-color: rgba(255, 255, 204, 0);
+    border-bottom-color: #AEFBFF; /*Inner color of triangle*/
+    border-width: 30px;
+    margin-top: -60px;
+}
+.tooltip .tooltiptext:before {
+    border-color: rgba(255, 204, 0, 0);
+    border-bottom-color: #005c61; /*Border color of triangle*/
+    border-width: 30px;
+    margin-top: -60px;
 }
 
 li.tooltip .tooltiptext {
@@ -388,6 +413,18 @@ div.tooltip .tooltiptext {  /* Position the tooltip text - see examples below! *
 .pos_r{
 	left:-200%;
 }
+
+.tooltiptext.pos_c:before,  
+.tooltiptext.pos_c:after {
+	left: 47%;
+}
+
+.tooltiptext.pos_r:before,
+.tooltiptext.pos_r:after {
+	left:81%;
+ } 
+
+
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
