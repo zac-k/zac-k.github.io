@@ -33,25 +33,31 @@
 						horizontalScrolling: false,
 						verticalOffset: 5
 					});
-				}
+					
+					
 				
-			);
+				
+				
+			});
 		</script>
 		
 		
 
-		<!-- <script> -->
-			<!-- function SetVolume(val) -->
-			<!-- { -->
-				<!-- var player = document.getElementById('hearthis_at_track_3051314'); -->
-				<!-- console.log('Before: ' + player.volume); -->
-				<!-- player.volume = val / 100; -->
-				<!-- console.log('After: ' + player.volume); -->
-			<!-- } -->
-		<!-- </script> -->
-		
 	
-		
+		<script>
+			function setActive(item) {
+				console.log('setting active' + item);
+				console.log($(item).parent());
+				$.each($(item).parent().find('li'), function() {
+					$(this).find('a').removeClass('active');
+					$(this).removeClass('active');
+					console.log($(this));
+				});
+				$(item).addClass('active');
+				$(item).find('a').addClass('active');
+				
+			}
+		</script>
 		
 		
 	</head>
@@ -87,13 +93,15 @@
 		<nav  id=musicbar>
     		<ul>
 			
-        		<li><a class="active" href="trance.html" target="mainFrame">Trance</a></li>	        	
-					<li><a href="house.html" target="mainFrame">House</a></li>
-					<li><a href="drum_and_bass.html" target="mainFrame">Drum and Bass</a></li>
-						
-					<li class="active"><a href="other_genres.html" target="mainFrame">Other Genres</a></li>
+        		<li class="active" onclick="setActive(this)"><a class="active" href="trance.html" target="mainFrame">Trance</a></li>
+	        	
+				<li onclick="setActive(this)"><a href="house.html" target="mainFrame">House</a></li>
+				
+				<li onclick="setActive(this)"><a href="drum_and_bass.html" target="mainFrame">Drum and Bass</a></li>
 					
-					<li><a href="remixes.html" target="mainFrame">Remixes</a></li>
+				<li onclick="setActive(this)"><a href="other_genres.html" target="mainFrame">Other Genres</a></li>
+				
+				<li onclick="setActive(this)"><a href="remixes.html" target="mainFrame">Remixes</a></li>
     		</ul>
 		</nav>
 		
