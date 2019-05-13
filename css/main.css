@@ -293,19 +293,20 @@ div.name-align {
 .tooltip {
   /* height=130; */
   /*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
-  border: 1px solid white; /* Mouse-over doesn't work exactly right without a border */
   
 }
 
 li.tooltip {
 	display: block;
 	position: static;
+	/*li already has a border*/
 }
 
 div.tooltip {
   display: inline-block;
   position: relative;
   width:32%;	
+  border: 1px solid white; /* Mouse-over doesn't work exactly right without a border */
 }
 
 .tt_menu {
@@ -332,15 +333,17 @@ div.tooltip {
   
   /* Fade */
   opacity: 0;
-  transition: opacity 0.5s;
+  /* transition: opacity 0.5s; */
   /* Make tooltip ignore self-hover */
   pointer-events: none;
   
 }
 
-.tooltip .tooltiptext:after,
-.tooltip .tooltiptext:before {
-    left: 14%;
+
+
+.tooltip .tooltiptext #after,
+.tooltip .tooltiptext #before {
+    left: 0%;
     top: 0%;
     border: solid transparent;
     content: " ";
@@ -350,31 +353,48 @@ div.tooltip {
     pointer-events: none;
 }
 
-.tooltip .tooltiptext:after {
+.tooltip .tooltiptext #after {
     border-color: rgba(255, 255, 204, 0);
     border-bottom-color: #AEFBFF; /*Inner color of triangle*/
     border-width: 30px;
     margin-top: -60px;
+	margin-left: 1px;
 }
-.tooltip .tooltiptext:before {
+.tooltip .tooltiptext #before {
     border-color: rgba(255, 204, 0, 0);
     border-bottom-color: #005c61; /*Border color of triangle*/
-    border-width: 30px;
-    margin-top: -60px;
+    border-width: 31px;
+    margin-top: -62px;
 }
+
 
 li.tooltip .tooltiptext {
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, 20px);
+    transform: translate(-50%, 30px);
 	width: 100%;
+	
 	
 }
 
+
+
 div.tooltip .tooltiptext {  /* Position the tooltip text - see examples below! */
   width: 300%;
+  top: 85%;
 	
 }
+
+
+/* li.tooltip .tooltiptext #before,   */
+/* li.tooltip .tooltiptext#after { */
+	/* position: absolute;  */
+/* } */
+
+/* div.tooltip .tooltiptext #before,   */
+/* div.tooltip .tooltiptext #after { */
+	
+/* } */
+
 
 .tooltip .tooltiplink {
   visibility: hidden;
@@ -397,7 +417,7 @@ div.tooltip .tooltiptext {  /* Position the tooltip text - see examples below! *
   
   /* Fade */
   opacity: 1;
-  transition: opacity 1s;
+  /* transition: opacity 1s; */
 	
 }
 
