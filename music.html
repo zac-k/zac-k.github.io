@@ -16,8 +16,19 @@
 		<script>
 			$(document).ready(function(){
 					window.addEventListener('message', function(event) { 
-						var frameHeight = event.data;
-						document.getElementById("mainFrame").height = frameHeight;
+						var data = event.data;
+						switch (data.label){
+							case 'height':
+								var frameHeight = data.value;
+								document.getElementById("mainFrame").height = frameHeight;
+								break;
+							case 'overlay':
+								if (data.value) {
+									$(overlay_surround).css('opacity', 0.6);
+								} else {
+									$(overlay_surround).css('opacity', 0);
+								}
+						}
 						<!-- // IMPORTANT: Check the origin of the data!  -->
 						<!-- if (~event.origin.indexOf('zac-k.github.io')) {  -->
 							<!-- // The data has been sent from your site  -->
@@ -99,7 +110,7 @@
 		<nav  id=musicbar>
     		<ul>
 			
-        		<li class="active tooltip" onmouseover="positionMarker(this)" onclick="setActive(this)"><a class="active" href="trance.html" target="mainFrame">Trance</a>
+        		<li class="active tooltip" onmouseover="positionMarker(this)" onmouseout="resetOverlay(this)" onclick="setActive(this)"><a class="active" href="trance.html" target="mainFrame">Trance</a>
 				<span class="tooltiptext"><div id="before"> </div><div id="after"></div>
 					These are currently mostly "anthem" style hard trance tracks. It's a style that has a lot of emotive qualities due to its chord structure and uplifting melodies, so for my personal taste, there is more to get from this style&mdash;as a listener&mdash;than the more meditative styles of trance that have less complex chord structures and more repetitive melodic motifs. I have worked on other sub-genres of trance, and probably will again, so it's likely I will include some more here in the future.</span>
 				</li>
@@ -135,8 +146,16 @@
 		<!-- </script> -->
 		
 		
+		<div id="overlay_surround" class="overlay">
+		</div>
 		
-		<iframe scrolling="no" src=./trance.html width="100%" frameborder="0" allowtransparency id="mainFrame" name="mainFrame"></iframe>
+		<div id="musiccontainer">
+			<iframe scrolling="no" src=./trance.html frameborder="0" allowtransparency id="mainFrame" name="mainFrame" onload="$(this).parent().find('.loading')[0].style.opacity=0"></iframe>
+			<div class="loading"> </div>
+		
+			<!--  -->
+			
+		</div>
 		
 		
 <!--
@@ -149,6 +168,9 @@
 		<br>
 		<br>
 		<br>
+		<!-- <div id="overlay" > -->
+		<!-- </div> -->
+		
 		
 		<footer>
     		<ul>

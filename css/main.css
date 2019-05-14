@@ -63,6 +63,7 @@ nav ul{
 	background:#00b0bb;
 	overflow:hidden;
 	font-size: 150%;
+	z-index: 5;
 }
 
 nav ul li{
@@ -93,7 +94,7 @@ nav li:hover {
 #musicbar{
 	position: -webkit-sticky;
     position: sticky;
-    top: 25px;
+    top: 28px;
 }
 
 .stickybar {
@@ -305,8 +306,10 @@ li.tooltip {
 div.tooltip {
   display: inline-block;
   position: relative;
-  width:32%;	
-  border: 1px solid white; /* Mouse-over doesn't work exactly right without a border */
+  width:30%;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0); /* Mouse-over doesn't work exactly right without a border */
+  
 }
 
 .tt_menu {
@@ -321,7 +324,7 @@ div.tooltip {
   color: black;
   text-align: center;
   padding: 5px 0;
-  border-radius: 6px;
+  border-radius: 20px;
   border-style:visible;
   font-size:25px;
   /* bottom: -20%; */
@@ -329,7 +332,7 @@ div.tooltip {
     position: absolute;
  
 
-  z-index: 1;
+  z-index: 5;
   
   /* Fade */
   opacity: 0;
@@ -351,20 +354,21 @@ div.tooltip {
     width: 0;
     position: absolute;
     pointer-events: none;
+	border-height: 30px;
 }
 
 .tooltip .tooltiptext #after {
     border-color: rgba(255, 255, 204, 0);
     border-bottom-color: #AEFBFF; /*Inner color of triangle*/
-    border-width: 30px;
-    margin-top: -60px;
+    border-width: 15px;
+    margin-top: -30px;
 	margin-left: 1px;
 }
 .tooltip .tooltiptext #before {
     border-color: rgba(255, 204, 0, 0);
     border-bottom-color: #005c61; /*Border color of triangle*/
-    border-width: 31px;
-    margin-top: -62px;
+    border-width: 16px;
+    margin-top: -32px;
 }
 
 
@@ -380,7 +384,7 @@ li.tooltip .tooltiptext {
 
 div.tooltip .tooltiptext {  /* Position the tooltip text - see examples below! */
   width: 300%;
-  top: 85%;
+  top: 110%;
 	
 }
 
@@ -394,6 +398,80 @@ div.tooltip .tooltiptext {  /* Position the tooltip text - see examples below! *
 /* div.tooltip .tooltiptext #after { */
 	
 /* } */
+
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    background: black;
+    width:100%;
+    height:100%;
+    display:block;
+	z-index: 2;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+/* #overlay_surround{     */
+    /* z-index:0; */
+/* } */
+
+/* #overlay_complete{ */
+	/* z-index:3; */
+/* } */
+
+iframe.music {
+	width:100%;
+	background: white;
+	/* background: rgba(1,1,1,0); */
+	border: solid white 5px;
+	border-radius: 20px;
+	z-index: 0;
+}
+
+#mainFrame {
+	
+  
+  width: 100%;
+  z-index: 0;
+	border: solid rgba(1,1,1,0) 5px;
+	border-radius: 20px;
+	position:relative;
+	transition: opacity=2s;
+	
+}
+
+#musiccontainer {
+	position:relative;
+	z-index:-1;
+}
+
+.loading {
+	background: white url(../content/loading.gif) center top no-repeat;
+	
+	width:100%;
+	height:100%;
+	pointer-events: none;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* display: "block"; */
+	z-index:3;
+	
+}
+
+#trackbg{
+    position:absolute;
+    top:0;
+    left:0;
+	/* z-index: 6; */
+    background:rgba(0,0,0,1);
+    width:100%;
+    height:100%;
+    display:block;
+}
 
 
 .tooltip .tooltiplink {

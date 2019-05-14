@@ -57,7 +57,7 @@
 	</body>
 	<script>
 		var height = document.getElementsByTagName("BODY")[0].scrollHeight;
-		parent.postMessage(height, '*');
+		parent.postMessage({label: 'height', value:height}, '*');
 	</script>
 </html> 
 
