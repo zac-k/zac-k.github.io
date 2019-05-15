@@ -457,7 +457,7 @@ iframe.music {
 	z-index: 0;
 }
 
-#mainFrame {
+#musicFrame, #mainFrame {
 	
   
   width: 100%;

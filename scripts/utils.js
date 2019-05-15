@@ -39,6 +39,30 @@
 		}
 	}
 	
+	function addCvFormats(item) {
+		
+		var frmts = [{'url': "cv/LaTeX/Zac Kemp - Resume.pdf", 'txt': "PDF (best for printing)"},
+					 {'url': "cv/Zac Kemp - Resume.docx", 'txt': "Word"},
+					 {'url': "cv/Zac Kemp - Resume.txt", 'txt': "Plain text"}];
+					 
+		for( var i = 0; i < frmts.length; i++){
+			var tmp = document.createElement('li');
+			tmp.className = "right-align cv-formats";
+			var tmp_a = document.createElement('a');
+			tmp_a.href = frmts[i].url;
+			tmp_a.innerHTML = frmts[i].txt;
+			tmp.appendChild(tmp_a);
+			$(item).parent().append(tmp);
+		}
+	}
+	
+	function removeCvFormats(item) {		
+		console.log("remove cv");
+			$(item).parent().find(".cv-formats").each( function(){
+				$(this).remove();
+			});
+	}
+	
 	function generateTrack(track_num, track_name, track_url, track_comment, position, source_url) {
 		
 		var outer = document.createElement("div");
@@ -89,5 +113,21 @@
 		$('#main').append(outer);
 		
 		
+		
+	}
+	
+	
+	
+	
+	function setActive(item) {
+		$(item).parent().find('.list_item').each(function(){$(this).removeClass('active');$(this).find('a').removeClass('active');});
+		$(item).addClass('active');
+		$(item).find('a').addClass('active');
+		console.log(item.id);
+		if(item.id==="cv"){
+			addCvFormats(item);
+		}else{
+			removeCvFormats(item);
+		}
 		
 	}

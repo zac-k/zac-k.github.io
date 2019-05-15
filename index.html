@@ -7,8 +7,36 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts/fade.js"></script>
 		<script type="text/javascript" src="scripts/jquery.stellar.min.js"></script>
+		<script type="text/javascript" src="scripts/utils.js"></script>
 		<script>
 			$(document).ready(function(){
+				window.addEventListener('message', function(event) { 
+					var data = event.data;
+					switch (data.label){
+						case 'height':
+							var frameHeight = data.value;
+							document.getElementById("mainFrame").height = frameHeight;
+							break;
+						case 'overlay':
+							if (data.value) {
+								$(overlay_surround).css('opacity', 0.6);
+							} else {
+								$(overlay_surround).css('opacity', 0);
+							}
+					}
+					<!-- // IMPORTANT: Check the origin of the data!  -->
+					<!-- if (~event.origin.indexOf('zac-k.github.io')) {  -->
+						<!-- // The data has been sent from your site  -->
+
+						<!-- // The data sent with postMessage is stored in event.data  -->
+						<!-- document.getElementById("musicFrame").height = frameHeight;  -->
+					<!-- } else {  -->
+						<!-- // The data hasn't been sent from your site!  -->
+						<!-- // Be careful! Do not use it.  -->
+						<!-- return;  -->
+					<!-- }  -->
+					
+				});
 				$.stellar({
 					horizontalScrolling: false,
 					verticalOffset: 5
@@ -26,36 +54,23 @@
 				<div id="banner" data-stellar-background-ratio="1.5"></div>
 	<nav  id=bar>
 				<ul>
-					<li class="active"><a class="active" href="index.html">Home</a></li>	        	
-					<li><a href="cv.html">CV</a></li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="software.html">Software</a></li>
-					<li><a href="music.html">Music</a></li>
-					<li><a href="media.html">Other Media</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li class="right-align"><a href="help.html">Help</a></li>
+					<li class="active list_item" onclick="setActive(this)"><a class="active" href="index.html" target="mainFrame">Home</a></li>	        	
+					<li class="list_item" id="cv" onclick="setActive(this);"><a href="cv.html" target="mainFrame">CV</a></li>
+					<li class="list_item" onclick="setActive(this)"><a href="publications.html" target="mainFrame">Publications</a></li>
+					<li class="list_item" onclick="setActive(this)"><a href="software.html" target="mainFrame">Software</a></li>
+					<li class="list_item" onclick="setActive(this)"><a href="music.html" target="mainFrame">Music</a></li>
+					<li class="list_item" onclick="setActive(this)"><a href="media.html" target="mainFrame">Other Media</a></li>
+					<li class="list_item" onclick="setActive(this)"><a href="contact.html" target="mainFrame">Contact</a></li>
+					<li class="right-align list_item" onclick="setActive(this)"><a href="help.html" target="mainFrame">Help</a></li>
 					<!-- <li><deadlink>Blog</deadlink></li> -->
 				</ul>
 			</nav>
 			<br>
-		<div id="main">
+		
 			
-			<div class="container">
-				<div class="blurb">
-					<h1>About Me</h1>
-					
-					<p>
-					I am a theoretical/computational physicist with a PhD from Monash University. My PhD research examined the accuracy in the reconstruction of three dimensional electromagnetic vector fields using transmission electron microscopy. For this work, I developed skills in the production of highly realistic electron-optical simulations, algorithm design and implementation, and data analysis.
-					
-					I have a passion for anything&mdash;creative or technical&mdash;that utilises computers and other technology. This includes programming, physics simulations, 3D modelling, game development, music production, and digital drawing. In the small amount of spare time I have left, I like to juggle, knit and crochet, play board and video games, and spend time with my girlfriend and our cats.
-					<br><br>
-					If you're currently hiring, and think that I may have the skills you're after, feel free to check out my <a href="./cv/LaTeX/Zac Kemp - Resume.pdf">CV</a> and <a href="contact.html">get in touch.</a>
-					<br><br>
-					
-					<img src="content/name_handwritten.png" width=300px>
-					</p>
-				</div><!-- /.blurb -->
-			</div><!-- /.container -->
+			<iframe scrolling="no" src="./about.html" frameborder="0" allowtransparency="true" id="mainFrame" name="mainFrame"></iframe>
+			
+			<div id="main">
 			<footer>
 				<ul>
 					<li><a href="mailto:zac.kemp@outlook.com">email</a></li>

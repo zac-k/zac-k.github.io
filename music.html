@@ -20,7 +20,7 @@
 						switch (data.label){
 							case 'height':
 								var frameHeight = data.value;
-								document.getElementById("mainFrame").height = frameHeight;
+								document.getElementById("musicFrame").height = frameHeight;
 								break;
 							case 'overlay':
 								if (data.value) {
@@ -34,7 +34,7 @@
 							<!-- // The data has been sent from your site  -->
 
 							<!-- // The data sent with postMessage is stored in event.data  -->
-							<!-- document.getElementById("mainFrame").height = frameHeight;  -->
+							<!-- document.getElementById("musicFrame").height = frameHeight;  -->
 						<!-- } else {  -->
 							<!-- // The data hasn't been sent from your site!  -->
 							<!-- // Be careful! Do not use it.  -->
@@ -121,24 +121,24 @@
 		<nav  id=musicbar>
     		<ul>
 			
-        		<li class="active tooltip" onmouseover="positionMarker(this); enableOverlay(this);" onmouseout="disableOverlay(this);" onclick="setActive(this)"><a class="active" href="trance.html" target="mainFrame">Trance</a>
+        		<li class="active tooltip" onmouseover="positionMarker(this); enableOverlay(this);" onmouseout="disableOverlay(this);" onclick="setActive(this)"><a class="active" href="trance.html" target="musicFrame">Trance</a>
 				<span class="tooltiptext"><div id="before"> </div><div id="after"></div>
 					These are currently mostly "anthem" style hard trance tracks. It's a style that has a lot of emotive qualities due to its chord structure and uplifting melodies, so for my personal taste, there is more to get from this style&mdash;as a listener&mdash;than the more meditative styles of trance that have less complex chord structures and more repetitive melodic motifs. I have worked on other sub-genres of trance, and probably will again, so it's likely I will include some more here in the future.</span>
 				</li>
 	        	
-				<li class="tooltip" onmouseover="positionMarker(this); enableOverlay(this);" onclick="setActive(this)"><a href="house.html" target="mainFrame">House</a>
+				<li class="tooltip" onmouseover="positionMarker(this); enableOverlay(this);" onclick="setActive(this)"><a href="house.html" target="musicFrame">House</a>
 				<span class="tooltiptext"><div id="before"> </div><div id="after"></div>
 					
 			I'm not an avid listener of house music, but it's a style I do enjoy working on. I like the spacious, live-music feel that can be achieved with this style, and the slower tempo makes a great change of pace from the trance tracks I usually produce, so I mostly work on on a soft, funky style of vocal house&mdash; deep house, maybe? I prefer to use as few samples as possible in my music, but due to the requirement of good quality vocals in this style, my mediocre singing abilities, and the fact that I usually prefer female vocals in house, I use vocal samples a lot here.</span>
 				</li>
 				
-				<li class="tooltip" onmouseover="positionMarker(this); enableOverlay(this);" onclick="setActive(this)"><a href="drum_and_bass.html" target="mainFrame">Drum and Bass</a>
+				<li class="tooltip" onmouseover="positionMarker(this); enableOverlay(this);" onclick="setActive(this)"><a href="drum_and_bass.html" target="musicFrame">Drum and Bass</a>
 				<span class="tooltiptext"><div id="before"> </div><div id="after"></div>
 					
 			Although it's not a style I listen to much, I find a lot of drum and bass quite interesting, so I thought I'd give it a go. I have attempted to work on the style in the past without much success, but trying again recently, I found that the production skills I've gained working on other styles transferred well, and I'm very happy with the results. These tracks tend to be mostly beat-driven, with complex percussion centre stage, rather than having a strong focus on rich and interesting basslines that a lot of drum and bass has, although I would like to try focussing more on that side of the style in the future. </span>
 				</li>
 					
-				<li class="tooltip" onmouseover="positionMarker(this); enableOverlay(this);" onclick="setActive(this)"><a href="other_genres.html" target="mainFrame">Other Genres</a>				
+				<li class="tooltip" onmouseover="positionMarker(this); enableOverlay(this);" onclick="setActive(this)"><a href="other_genres.html" target="musicFrame">Other Genres</a>				
 					<span class="tooltiptext"><div id="before"> </div><div id="after"></div>
 					This section is for anything that doesn't fit into any of the other sections. It includes tracks that could fit into a specific genre if I had enough tracks of that style to give them their own section, as well as tracks that don't actually <i>have</i> a clearly defined genre. 
 					<br>
@@ -146,7 +146,7 @@
 					I've been producing music for probably over two decades, and although my production skills are ever improving, there are tracks that I created early on that I still love and want to include here both because I think they're great in their own right, and also to show the evolution of my style. However, they tend not to fit neatly into genres like a lot of what I produce today, so this section is where most of them are likely to end up. </span>
 				</li>
 				
-				<li class="tooltip" onmouseover="positionMarker(this); enableOverlay(this);" onclick="setActive(this)"><a href="remixes.html" target="mainFrame">Remixes</a>
+				<li class="tooltip" onmouseover="positionMarker(this); enableOverlay(this);" onclick="setActive(this)"><a href="remixes.html" target="musicFrame">Remixes</a>
 				<span class="tooltiptext"><div id="before"> </div><div id="after"> </div>
 			These are tracks that have a complete enough sample to be considered remixes, as well as anything that would be considered a 'cover'. I try to avoid copyright infringement, so most of my remixes utilise vocals under a creative commons licence, and links are provided to the original source for each track. When I use an a cappella, I usually avoid listening to the original artist's mix first so as not to be influenced by it, and I typically only use the vocals, so for most of these the term "remix" is applied fairly loosely.</span>
 				</li>
@@ -170,7 +170,7 @@
 			
 		<!-- </div> -->
 			
-		<iframe scrolling="no" src="./trance.html" frameborder="0" allowtransparency="true" id="mainFrame" name="mainFrame"></iframe>
+		<iframe scrolling="no" src="./trance.html" frameborder="0" allowtransparency="true" id="musicFrame" name="musicFrame"></iframe>
 <!--
 		
 		

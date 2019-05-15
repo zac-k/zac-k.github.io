@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zac Kemp - About Me</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/fade.js"></script>
+		<script type="text/javascript" src="scripts/jquery.stellar.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$.stellar({
+					horizontalScrolling: false,
+					verticalOffset: 5
+				});
+			});
+		</script>
+
+
+	</head>
+	
+	<body>
+		
+		
+		
+				
+
+			<br>
+		<div id="main">
+			
+			<div class="container">
+				<div class="blurb">
+					<h1>About Me</h1>
+					
+					<p>
+					I am a theoretical/computational physicist with a PhD from Monash University. My PhD research examined the accuracy in the reconstruction of three dimensional electromagnetic vector fields using transmission electron microscopy. For this work, I developed skills in the production of highly realistic electron-optical simulations, algorithm design and implementation, and data analysis.
+					
+					I have a passion for anything&mdash;creative or technical&mdash;that utilises computers and other technology. This includes programming, physics simulations, 3D modelling, game development, music production, and digital drawing. In the small amount of spare time I have left, I like to juggle, knit and crochet, play board and video games, and spend time with my girlfriend and our cats.
+					<br><br>
+					If you're currently hiring, and think that I may have the skills you're after, feel free to check out my <a href="./cv/LaTeX/Zac Kemp - Resume.pdf">CV</a> and <a href="contact.html">get in touch.</a>
+					<br><br>
+					
+					<img src="content/name_handwritten.png" width=300px>
+					</p>
+				</div><!-- /.blurb -->
+			</div><!-- /.container -->
+		</div>
+	</body>
+	<script>
+		var height = document.getElementsByTagName("BODY")[0].scrollHeight;
+		parent.postMessage({label: 'height', value:height}, '*');
+		
+	</script>
+</html> 
