@@ -101,6 +101,7 @@ nav li:hover {
 	position: -webkit-sticky;
     position: sticky;
     top: 0;
+	z-index: 0;
 }
 
 #musicbar{
@@ -333,6 +334,7 @@ div.tooltip {
   width:30%;
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0); /* Mouse-over doesn't work exactly right without a border */
+ 
   
 }
 
@@ -384,15 +386,15 @@ div.tooltip {
 .tooltip .tooltiptext #after {
     border-color: rgba(255, 255, 204, 0);
     border-bottom-color: #AEFBFF; /*Inner color of triangle*/
-    border-width: 15px;
-    margin-top: -30px;
+    border-width: 30px;/*15px;                                 <---when using overlay*/
+    margin-top: -60px; /*-30px;                                <---when using overlay*/
 	margin-left: 1px;
 }
 .tooltip .tooltiptext #before {
     border-color: rgba(255, 204, 0, 0);
     border-bottom-color: #005c61; /*Border color of triangle*/
-    border-width: 16px;
-    margin-top: -32px;
+    border-width: 31px; /*16px;                                <---when using overlay*/
+    margin-top: -62px; /*-32px;                                <---when using overlay*/
 }
 
 
@@ -402,14 +404,15 @@ li.tooltip .tooltiptext {
 	width: 100%;
 	
 	
+	
 }
 
 
 
 div.tooltip .tooltiptext {  /* Position the tooltip text - see examples below! */
   width: 300%;
-  top: 110%;
-	
+  /* top: 110%;                                               <---when using overlay*/
+  top: 85%;
 }
 
 

@@ -1,5 +1,5 @@
 
-			
+	overlay_enabled = false;
 	function positionMarker(item) {
 		
 		var centre_offset = 0;
@@ -13,29 +13,30 @@
 	}
 	
 	function enableOverlay(item) {
-		return;
 		
-		$(item).css('z-index', 5)
-		$(item).css('z-index', 5)
-		//$(item).children().each(function(){$(this).css('z-index', 5);})
-	    $(document).find('.overlay').css('opacity', 0.6);
-		
-		parent.postMessage({label: 'overlay', value:true}, '*');
+		if(overlay_enabled) {
+			$(item).parent().children().each(function(){$(this).css('z-index', -1);})
+			$(item).css('z-index', 5)
+			$(document).find('.overlay').css('opacity', 0.6);
+			
+			parent.postMessage({label: 'overlay', value:true}, '*');
+	    }
 	}
 	
 	
 	
 	function disableOverlay(item) {
-		return;
-		$(item).css('z-index', 0)
-		$(document).find('.overlay').css('opacity', 0);
-		
-		// $(item).children().each(function(){
-			// $(item).css('opacity', 0);
-			// })
-		
-		
-		parent.postMessage({label: 'overlay', value:false}, '*');
+		if(overlay_enabled) {
+			$(item).css('z-index', 0)
+			$(document).find('.overlay').css('opacity', 0);
+			
+			// $(item).children().each(function(){
+				// $(item).css('opacity', 0);
+				// })
+			
+			
+			parent.postMessage({label: 'overlay', value:false}, '*');
+		}
 	}
 	
 	function generateTrack(track_num, track_name, track_url, track_comment, position, source_url) {
