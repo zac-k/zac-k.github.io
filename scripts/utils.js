@@ -38,7 +38,7 @@
 		parent.postMessage({label: 'overlay', value:false}, '*');
 	}
 	
-	function generateTrack(track_num, track_name, track_url, track_comment, position) {
+	function generateTrack(track_num, track_name, track_url, track_comment, position, source_url) {
 		
 		var outer = document.createElement("div");
 		outer.setAttribute('class', 'tooltip');
@@ -73,7 +73,18 @@
 		
 		outer.appendChild(iframe);
 		outer.appendChild(tooltip);
-		console.log(outer);
+		
+		if(typeof source_url !== "undefined") {
+			var ttlink = document.createElement("div");
+			ttlink.setAttribute('class', "tooltiplink");
+			var tt_anchor = document.createElement("a");
+			tt_anchor.setAttribute('href', source_url);
+			tt_anchor.setAttribute('target', "_blank");
+			tt_anchor.innerHTML = "Source vocals";
+			ttlink.appendChild(tt_anchor);
+			outer.appendChild(ttlink);
+		}
+		
 		$('#main').append(outer);
 		
 		
