@@ -311,6 +311,7 @@ div.name-align {
 li.tooltip {
 	display: block;
 	position: static;
+	z-index: 2;
 	/*li already has a border*/
 }
 
