@@ -2,9 +2,9 @@
 
 body {
     margin: 0px auto;
-	background-color: white;
+	background-color: none;
 	padding-bottom:50px;
-	/*background-image: url("../content/background2.png");*/
+	/* background-image: url("../content/background2.png"); */
 	background-repeat: repeat-x;
 	/*border: 2px solid gray;
     border-radius: 5px;*/	
@@ -63,9 +63,10 @@ nav ul{
 	background:#00b0bb;
 	overflow:hidden;
 	font-size: 150%;
+
 }
 nav {	
-	z-index: 0;
+	z-index: 5;
 }
 
 /* nav ul:hover { */
@@ -176,11 +177,23 @@ h1.center{
 	margin-top: 1em;
 }
 
-#banner {
+#banner_old {
     background-image: url('../content/banner/name_no_shadow.png'), url('../content/banner/photo_no_shadow.png'), url('../content/banner/banner_L_no_shadow.png'),url("../content/banner/banner_R_no_shadow.png");
     background-size: 274px, 235px, 711px, 711px;
     height:172px;
 	background-position: left 15% top 5px, right, left, right;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+	background-attachment: fixed;
+	
+}
+
+#banner {
+    background-image: url('../content/banner/name_no_shadow.png'), url('../content/banner/photo_no_shadow.png'), url('../content/banner/banner_L_no_shadow.png'),url("../content/banner/banner_R_no_shadow.png"), url("../content/background2.png") ;
+    background-size: 274px, 235px, 711px, 711px, 1200px;
+    height:172px;
+	background-position: left 15% top 5px, right, left, right, right;
 	background-repeat: no-repeat;
 	padding: 0;
 	margin: 0;
@@ -448,6 +461,7 @@ iframe.music {
   z-index: 0;
 	/* border: solid rgba(1,1,1,0) 5px; */
 	/* border-radius: 20px; */
+	background = rgba(1,1,1,0);
 	border: none;
 	position:relative;
 	transition: opacity=2s;
