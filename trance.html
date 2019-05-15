@@ -9,7 +9,13 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery.stellar.min.js"></script>
 		<script type="text/javascript" src="scripts/utils.js"></script>
-		
+		<script>
+			$(document).ready(function(){
+				return;
+				console.log("ready");
+				$(mainLoading).css('opacity', 0);
+			})
+		</script>
 		<!-- <script>
 			function init(){window.parent.setUpFrame(); return true;}
 			function contentsHeight(){
@@ -26,7 +32,7 @@
 
 	</head>
 	
-	<body>
+	<body onload="$(mainLoading).hide();">
 		
 		
 		
@@ -35,6 +41,9 @@
 		
 		<div id=main>
 			
+			<div class="loading" id="mainLoading">
+				<div class="loader">Loading...</div>
+			</div>
 			
 			<!-- <script>
 				// When the user scrolls the page, execute myFunction 
@@ -129,6 +138,7 @@
 	<script>
 		var height = document.getElementsByTagName("BODY")[0].scrollHeight;
 		parent.postMessage({label: 'height', value:height}, '*');
+		
 	</script>
 </html> 
 
