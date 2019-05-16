@@ -21,6 +21,8 @@
 							case 'height':
 								var frameHeight = data.value;
 								document.getElementById("musicFrame").height = frameHeight;
+								console.log("music frame");
+								sendHeight();
 								break;
 							case 'overlay':
 								if (data.value) {
@@ -93,22 +95,7 @@
 			</div>
 		-->
 		
-				<div id="banner" data-stellar-background-ratio="1.5">
-				</div>
-	
-		<nav  id=bar>
-    		<ul>
-        		<li><a href="index.html">Home</a></li>	        	
-					<li><a href="cv.html">CV</a></li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="software.html">Software</a></li>
-					<li class="active"><a class="active" href="music.html">Music</a></li>
-					<li><a href="media.html">Other Media</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li class="right-align"><a href="help.html">Help</a></li>
-        		<!-- <li><deadlink>Blog</deadlink></li> -->
-    		</ul>
-		</nav>
+				
 			<br>
 	<div id=main>
 		<h1>Music</h1>
@@ -185,14 +172,12 @@
 		<!-- </div> -->
 		
 		
-		<footer>
-    		<ul>
-        		<li><a href="zac.kemp@outlook.com">email</a></li>
-        		<li><a href="https://github.com/zac-k">github.com/zac-k</a></li>
-			</ul>
-		</footer>
+		
 		</div>
 	</body>
+	<script>
+		sendHeight();		
+	</script>
 </html> 
 
 

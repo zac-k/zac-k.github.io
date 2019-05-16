@@ -14,6 +14,8 @@
 				return;
 				console.log("ready");
 				$(mainLoading).css('opacity', 0);
+				var height = document.getElementsByTagName("BODY")[0].scrollHeight;
+				parent.postMessage({label: 'height', value:height}, '*');
 			})
 		</script>
 		<!-- <script>
@@ -32,7 +34,7 @@
 
 	</head>
 	
-	<body onload="$(mainLoading).hide();" background=transparent>
+	<body onload="$(mainLoading).hide(); sendHeight();" background=transparent>
 		
 		
 		

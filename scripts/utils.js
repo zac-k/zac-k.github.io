@@ -116,7 +116,10 @@
 		
 	}
 	
-	
+	function sendHeight() {
+		var height = document.getElementsByTagName("BODY")[0].scrollHeight;
+		parent.postMessage({label: 'height', value:height}, '*');
+	}
 	
 	
 	function setActive(item) {

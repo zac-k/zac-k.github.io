@@ -12,6 +12,11 @@ body {
 
 }
 
+/* #main_header { */
+	/* position: relative; */
+	/* z-index: 10; */
+/* } */
+
 html {
 	overflow-y: scroll;
 	overflow-x: auto;
@@ -101,7 +106,7 @@ nav li:hover {
 	position: -webkit-sticky;
     position: sticky;
     top: 0;
-	z-index: 0;
+	/* z-index: 0; */
 }
 
 #musicbar{
@@ -152,7 +157,7 @@ footer ul li {
 
 #bug_feature {
  position:absolute;
- top:200px;
+ top:0px;
  left:730px;
  width:450px;
 }

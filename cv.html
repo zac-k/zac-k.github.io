@@ -22,25 +22,7 @@
 	
 	<body>
 		
-		
-		
-				<div id="banner" data-stellar-background-ratio="1.5"></div>
-	<nav  id=bar>
-    		<ul>
-        		<li><a href="index.html">Home</a></li>
-        		<li class="active"><a class="active" href="index.html">CV</a></li>
-	        	<li><a href="publications.html">Publications</a></li>
-				<li><a href="software.html">Software</a></li>
-					<li><a href="music.html">Music</a></li>
-        		<li><a href="media.html">Other Media</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<!-- <li><deadlink>Blog</deadlink></li> -->
-				<li class="right-align"><a href="help.html">Help</a></li>
-				<li class="right-align cv-formats"><a href="cv/LaTeX/Zac Kemp - Resume.pdf">PDF (best for printing)</a></li>
-				<li class="right-align cv-formats"><a href="cv/Zac Kemp - Resume.docx">Word</a></li>
-				<li class="right-align cv-formats"><a href="cv/Zac Kemp - Resume.txt">Plain text</a></li>
-    		</ul>
-	</nav>
+	
 	<br>
 	<div id=main>
 		<span class="alignright sticky" style="right: 280px"><img src="content/other_formats(three_arrows).png" width=300px></span>
@@ -224,4 +206,9 @@ Minor: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;astrophysics
 		</div>
 		</div>
 	</body>
+	<script>
+		var height = document.getElementsByTagName("BODY")[0].scrollHeight;
+		parent.postMessage({label: 'height', value:height}, '*');
+		
+	</script>
 </html> 
