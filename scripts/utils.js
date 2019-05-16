@@ -56,8 +56,7 @@
 		}
 	}
 	
-	function removeCvFormats(item) {		
-		console.log("remove cv");
+	function removeCvFormats(item) {	
 			$(item).parent().find(".cv-formats").each( function(){
 				$(this).remove();
 			});
@@ -116,8 +115,28 @@
 		
 	}
 	
-	function sendHeight() {
-		var height = document.getElementsByTagName("BODY")[0].scrollHeight;
+	function sendHeight(elem) {
+		
+		switch (typeof elem){
+			case "undefined":
+				var height = document.getElementsByTagName("BODY")[0].scrollHeight;
+				break;
+			case "string":
+				height = elem;
+				break;			
+		}
+		// if(typeof elem==="undefined"){
+			// console.log("elem undefined");
+			// var height = document.getElementsByTagName("BODY")[0].scrollHeight;
+		// }else if(ty{
+		// }else{
+			//elem = JSON.parse(JSON.stringify(elem));
+			// console.log(elem);
+			// var height = elem.offsetHeight;
+			// console.log(height);
+			// height = "200px";
+		// }
+			
 		parent.postMessage({label: 'height', value:height}, '*');
 	}
 	
@@ -126,7 +145,6 @@
 		$(item).parent().find('.list_item').each(function(){$(this).removeClass('active');$(this).find('a').removeClass('active');});
 		$(item).addClass('active');
 		$(item).find('a').addClass('active');
-		console.log(item.id);
 		if(item.id==="cv"){
 			addCvFormats(item);
 		}else{

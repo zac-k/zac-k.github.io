@@ -476,6 +476,11 @@ iframe.music {
 	
 }
 
+/* #musicFram { */
+	
+	/* height: 500px; */
+/* } */
+
 #musiccontainer {
 	pointer-events: none;
 	position:relative;

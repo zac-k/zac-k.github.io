@@ -11,7 +11,7 @@
 		
 	</head>
 	
-	<body onload="$(mainLoading).hide();">
+	<body onload="$(mainLoading).hide(); sendHeight();">
 		
 	
 	<div id=main>
@@ -20,6 +20,9 @@
 		<div class="loading" id="mainLoading">
 			<div class="loader">Loading...</div>
 		</div>
+			<script>
+				sendHeight("200px");
+			</script>
 			
 		
 			<br>
@@ -88,8 +91,8 @@
 	</div>
 	</body>
 	<script>
-		var height = document.getElementsByTagName("BODY")[0].scrollHeight;
-		parent.postMessage({label: 'height', value:height}, '*');
+		sendHeight($(mainLoading));
+		
 	</script>
 </html> 
 
