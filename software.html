@@ -10,11 +10,6 @@
 		<script type="text/javascript" src="scripts/utils.js"></script>
 		<script>
 			$(document).ready(function(){
-				$.stellar({
-					horizontalScrolling: false,
-					verticalOffset: 5
-				});
-				
 				parent.postMessage({label: 'script', 
 									value:"$(bug_feature).css('visibility', 'visible');"}, '*');
 			});
