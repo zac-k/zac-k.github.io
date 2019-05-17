@@ -6,7 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script type="text/javascript" src="scripts/fade.js"></script>
 		<script type="text/javascript" src="scripts/jquery.stellar.min.js"></script>
 		<script type="text/javascript" src="scripts/utils.js"></script>
 		<script>
@@ -15,6 +14,9 @@
 					horizontalScrolling: false,
 					verticalOffset: 5
 				});
+				
+				parent.postMessage({label: 'script', 
+									value:"$(bug_feature).css('visibility', 'visible');"}, '*');
 			});
 		</script>
 
@@ -31,7 +33,7 @@
 	
 
 
-		<img src="content/bug_feature.png" id="bug_feature" class="fade">
+	
 
 			<br>
 		<div class="container">

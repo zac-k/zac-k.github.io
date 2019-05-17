@@ -13,6 +13,9 @@
 					horizontalScrolling: false,
 					verticalOffset: 5
 				});
+				
+				parent.postMessage({label: 'script', 
+									value:"$(bug_feature).css('visibility', 'hidden');"}, '*');
 			});
 		</script>
 

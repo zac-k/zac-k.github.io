@@ -41,6 +41,9 @@
 							<!-- // Be careful! Do not use it.  -->
 							<!-- return;  -->
 						<!-- }  -->
+				
+					parent.postMessage({label: 'script', 
+										value:"$(bug_feature).css('visibility', 'hidden');"}, '*');
 						
 					}); 	
 					$.stellar({

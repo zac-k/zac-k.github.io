@@ -23,6 +23,10 @@
 							} else {
 								$(overlay_surround).css('opacity', 0);
 							}
+							break;
+						case 'script':
+							eval(data.value);
+							break;
 					}
 					<!-- // IMPORTANT: Check the origin of the data!  -->
 					<!-- if (~event.origin.indexOf('zac-k.github.io')) {  -->
@@ -69,7 +73,9 @@
 			
 			<iframe scrolling="no" src="./about.html" frameborder="0" allowtransparency="true" id="mainFrame" name="mainFrame"></iframe>
 			
+				<img src="content/bug_feature.png" id="bug_feature" class="fade">
 			<div id="main">
+			
 			<footer>
 				<ul>
 					<li><a href="mailto:zac.kemp@outlook.com">email</a></li>
