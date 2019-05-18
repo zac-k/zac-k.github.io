@@ -140,8 +140,12 @@ li.right-align{
 
 li.active{	
 	background:white;
-	pointer-events: none;
 }
+
+/* li.active:active{ */
+	
+	/* pointer-events: none; */
+/* } */
 li.active:hover{
 	background-color:white;
 }
