@@ -14,7 +14,8 @@
 					<!-- // IMPORTANT: Check the origin of the data!  -->
 					<!-- if (event.origin.indexOf('zac-k.github.io')) {  -->
 					if (true) { <!--Need to fix this!!! -->
-						<!-- console.log(event.origin.indexOf('zac-k.github.io')); -->
+						console.log(event.origin.indexOf('zac-k.github.io'));			
+						console.log(event.origin.indexOf('www.google.com'));
 							// The data has been sent from your site 
 						var data = event.data;
 						switch (data.label){
@@ -39,10 +40,7 @@
 							return; 
 					} 
 					
-				<!-- console.log(event); -->
-				<!-- console.log(event.origin); -->
-				<!-- console.log(event.origin.indexOf('zac-k.github.io')); -->
-				<!-- console.log(event.origin.indexOf('www.google.com')); -->
+			
 					
 				});
 				$(main_header).stellar({
