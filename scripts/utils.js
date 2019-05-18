@@ -159,3 +159,32 @@
 		}
 		
 	}
+	
+	function setDataStellarBackgroundRatio(elem) {
+		var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+		if (true) {
+			var dsbr = 2;
+		}else{
+			var dsbr = 0.5;
+		}
+		elem.setAttribute("data-stellar-background-ratio",  dsbr);
+			
+		
+		
+	}
+	
+	function generateBanner(elem_id, rat) {
+		var isChrome = navigator.userAgent.indexOf("Chrome") != -1;
+		if (isChrome) {
+			rat = 1/rat;
+		}
+		console.log("chrome?:" + isChrome);
+		console.log("rat:" + rat);
+		banner = document.createElement("div");
+		banner.setAttribute("id",  elem_id);
+		banner.setAttribute("data-stellar-background-ratio",  rat);
+		$('#main_header').append(banner);
+			
+		
+		
+	}
