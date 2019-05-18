@@ -11,34 +11,38 @@
 		<script>
 			$(document).ready(function(){
 				window.addEventListener('message', function(event) { 
-					var data = event.data;
-					switch (data.label){
-						case 'height':
-							var frameHeight = data.value;
-							document.getElementById("mainFrame").height = frameHeight;
-							break;
-						case 'overlay':
-							if (data.value) {
-								$(overlay_surround).css('opacity', 0.6);
-							} else {
-								$(overlay_surround).css('opacity', 0);
-							}
-							break;
-						case 'script':
-							eval(data.value);
-							break;
-					}
 					<!-- // IMPORTANT: Check the origin of the data!  -->
-					<!-- if (~event.origin.indexOf('zac-k.github.io')) {  -->
-						<!-- // The data has been sent from your site  -->
-
-						<!-- // The data sent with postMessage is stored in event.data  -->
-						<!-- document.getElementById("musicFrame").height = frameHeight;  -->
-					<!-- } else {  -->
-						<!-- // The data hasn't been sent from your site!  -->
-						<!-- // Be careful! Do not use it.  -->
-						<!-- return;  -->
-					<!-- }  -->
+					<!-- if (event.origin.indexOf('zac-k.github.io')) {  -->
+					if (true) {
+						<!-- console.log(event.origin.indexOf('zac-k.github.io')); -->
+							// The data has been sent from your site 
+						var data = event.data;
+						switch (data.label){
+							case 'height':
+								var frameHeight = data.value;
+								document.getElementById("mainFrame").height = frameHeight;
+								break;
+							case 'overlay':
+								if (data.value) {
+									$(overlay_surround).css('opacity', 0.6);
+								} else {
+									$(overlay_surround).css('opacity', 0);
+								}
+								break;
+							case 'script':
+								eval(data.value);
+								break;
+						}
+						} else { 
+							// The data hasn't been sent from your site! 
+							// Be careful! Do not use it. 
+							return; 
+					} 
+					
+				console.log(event);
+				console.log(event.origin);
+				console.log(event.origin.indexOf('zac-k.github.io'));
+				console.log(event.origin.indexOf('www.google.com'));
 					
 				});
 				$.stellar({
@@ -55,7 +59,7 @@
 		
 		
 		
-				<div id="banner" data-stellar-background-ratio="1.5"></div>
+				<div id="banner" data-stellar-background-ratio="0.7"></div>
 	<nav  id=bar>
 				<ul>
 					<li class="active list_item" onclick="setActive(this)"><a class="active" href="about.html" target="mainFrame">Home</a></li>	        	
@@ -71,7 +75,7 @@
 			</nav>
 		
 			
-			<iframe scrolling="no" src="./about.html" frameborder="0" allowtransparency="true" id="mainFrame" name="mainFrame"></iframe>
+			<iframe scrolling="no" src="./about.html" frameborder="0" allowtransparency="true" id="mainFrame" name="mainFrame" allow-same-origin></iframe>
 			
 				<img src="content/bug_feature.png" id="bug_feature" class="fade">
 			<div id="main">

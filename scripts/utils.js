@@ -140,6 +140,13 @@
 		parent.postMessage({label: 'height', value:height}, '*');
 	}
 	
+	function sendTitle() {
+		
+		var doc_title_script = 'document.title = "' + String(document.title) + '"';
+		console.log(doc_title_script);
+		parent.postMessage({label: 'script', value: doc_title_script}, '*');	
+	}
+	
 	
 	function setActive(item) {
 		$(item).parent().find('.list_item').each(function(){$(this).removeClass('active');$(this).find('a').removeClass('active');});
