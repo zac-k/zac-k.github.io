@@ -183,15 +183,15 @@
 		when background_attachment is 'fixed'.
 		*/
 		// if(pos==='fixed'){
-			switch(browser.name){
-				case 'Chrome':
-					rat += 1;
-					break;
-				case 'Safari':
-					rat += 1;
-				default:
-					break;							
-			}
+			// switch(browser.name){
+				// case 'Chrome':
+					// rat += 1;
+					// break;
+				// case 'Safari':
+					// rat += 1;
+				// default:
+					// break;							
+			// }
 		//}
 		
 		

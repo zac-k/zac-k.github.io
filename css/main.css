@@ -244,6 +244,8 @@ h1.center{
     background-size: 274px, 235px, 711px, 711px, 1200px;
     height:172px;
 	background-position: left 15% top 5px, right, left, right, right;
+	background-position-x: 15%, 100%, 0%, 100%, 100%;
+	background-position-y:  3%, 0%, 0%, 0%, 0%;
 	background-repeat: no-repeat;
 	padding: 0;
 	margin: 0;
