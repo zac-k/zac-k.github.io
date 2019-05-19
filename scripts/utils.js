@@ -86,6 +86,9 @@
 		var tooltip = document.createElement("span");
 		tooltip.setAttribute('class', 'tooltiptext');
 		switch(position){
+			case "l":
+				tooltip.className += ' pos_l';
+				break;
 			case "c":
 				tooltip.className += ' pos_c';
 				break;
@@ -172,18 +175,54 @@
 		
 	}
 	
-	function generateBanner(elem_id, rat) {
-		var isChrome = navigator.userAgent.indexOf("Chrome") != -1;
-		if (isChrome) {
-			rat = 1/rat;
-		}
-		console.log("chrome?:" + isChrome);
-		console.log("rat:" + rat);
+	function generateBanner(elem_id, rat, pos) {
+		var browser = detectBrowser();
+		
+		/* 
+		For some reason the ratio needs to be +1 on Chrome and Safari
+		when background_attachment is 'fixed'.
+		*/
+		// if(pos==='fixed'){
+			switch(browser.name){
+				case 'Chrome':
+					rat += 1;
+					break;
+				case 'Safari':
+					rat += 1;
+				default:
+					break;							
+			}
+		//}
+		
+		
 		banner = document.createElement("div");
-		banner.setAttribute("id",  elem_id);
+		banner.setAttribute("id",  elem_id);		
+		banner.setAttribute("background-attachment", pos);
+		
+		
+		
 		banner.setAttribute("data-stellar-background-ratio",  rat);
 		$('#main_header').append(banner);
 			
 		
 		
 	}
+	
+	function detectBrowser(){
+		// Acknowlegement: https://stackoverflow.com/a/2401861/2326764
+		var ua= navigator.userAgent, tem,
+		M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+		if(/trident/i.test(M[1])){
+			tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+			return 'IE '+(tem[1] || '');
+		}
+		if(M[1]=== 'Chrome'){
+			tem= ua.match(/\b(OPR|Edge?)\/(\d+)/);
+			if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera').replace('Edg ', 'Edge ');
+		}
+		M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+		if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+		var browser = {'name': M[0], 'version': M[1]}
+		return browser;
+	}
+	

@@ -247,8 +247,6 @@ h1.center{
 	background-repeat: no-repeat;
 	padding: 0;
 	margin: 0;
-	/* background-attachment should be 'fixed' for performance, but this causes the scroll speed to be reciprocal on Chrome vs other browsers (not sure why). Ideally, this should be fixed to improve */
-	background-attachment: relative;
 	
 }
 
@@ -462,7 +460,7 @@ li.tooltip .tooltiptext {
 div.tooltip .tooltiptext {  /* Position the tooltip text - see examples below! */
   width: 300%;
   /* top: 110%;                                               <---when using overlay*/
-  top: 85%;
+  top: 85%; /* Doesn't change anything on firefox */
 }
 
 
@@ -586,7 +584,9 @@ iframe.music {
 }
 
 
-
+.pos_l{
+	left:0%;
+}
 
 
 .pos_c{
