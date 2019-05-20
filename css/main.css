@@ -43,7 +43,7 @@ html {
     -webkit-box-shadow: inset 0 0 6px #034984; 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(255,0,0,0.4); 
+	background: white; 
 }
 
 #main {
@@ -399,6 +399,8 @@ div.tooltip {
 
 li.tooltip .tooltiptext {
     left: 50%;
+	-ms-transform: translate(-50%, 30px);
+	-webkit-transform: translate(-50%, 30px);
     transform: translate(-50%, 30px);
 	width: 100%;
 	
