@@ -195,13 +195,16 @@
 		//}
 		
 		
+		
+		
 		banner = document.createElement("div");
 		banner.setAttribute("id",  elem_id);		
 		banner.setAttribute("background-attachment", pos);
 		
-		
-		
-		banner.setAttribute("data-stellar-background-ratio",  rat);
+		/* Do not enable parallax effect on Safari */
+		if(browser.name!=='Safari'){
+			banner.setAttribute("data-stellar-background-ratio",  rat);			
+		}
 		$('#main_header').append(banner);
 			
 		
