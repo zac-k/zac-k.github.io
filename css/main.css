@@ -192,54 +192,10 @@ h1.center{
 	margin-top: 1em;
 }
 
-#banner_old {
-    background-image: url('../content/banner/name_no_shadow.png'), url('../content/banner/photo_no_shadow.png'), url('../content/banner/banner_L_no_shadow.png'),url("../content/banner/banner_R_no_shadow.png");
-    background-size: 274px, 235px, 711px, 711px;
-    height:172px;
-	background-position: left 15% top 5px, right, left, right;
-	background-repeat: no-repeat;
-	padding: 0;
-	margin: 0;
-	
-	
-	background-attachment: fixed;
-	
-	
-}
 
-#banner_fixed {
-    background-image: url('../content/banner/name_no_shadow.png'), url('../content/banner/photo_no_shadow.png'), url('../content/banner/banner_L_no_shadow.png'),url("../content/banner/banner_R_no_shadow.png"), url("../content/background2.png") ;
-    background-size: 274px, 235px, 711px, 711px, 1200px;
-    height:172px;
-	background-position: left 15% top 5px, right, left, right, right;
-	background-repeat: no-repeat;
-	padding: 0;
-	margin: 0;
-	/* background-attachment should be 'fixed' for performance, but this causes the scroll speed to be reciprocal on Chrome vs other browsers (not sure why). Ideally, this should be fixed to improve */
-	background-attachment: fixed;
-	/* -webkit-backface-visibility:hidden;  */
-/* -webkit-transform: translateZ(0); */
-	
-}
-#banner_container {
-	/* height:172px; */
-}
+
 
 #banner {
-	position: relative;
-	height: 172px;
-	top: 0px;
-}
-
-#banner_img {
-	/* height: 172px; */
-	position: float;
-	padding: 0;
-	margin: 0;
-	background: transparent;
-}
-
-#banner_working {
     background-image: url('../content/banner/name_no_shadow.png'), url('../content/banner/photo_no_shadow.png'), url('../content/banner/banner_L_no_shadow.png'),url("../content/banner/banner_R_no_shadow.png"), url("../content/background2.png") ;
     background-size: 274px, 235px, 711px, 711px, 1200px;
     height:172px;
@@ -254,14 +210,7 @@ h1.center{
 
 
 
-/*#banner {
-    background-image:url('../content/banner_new.png');
-    background-size:711px;
-    height:198px;
-	background-position:center;
-	background-repeat: no-repeat;
-	
-}*/
+
 
 h2 {
 	margin-top: 3em;
