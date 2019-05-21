@@ -458,7 +458,7 @@ iframe.music {
 	z-index: 0;
 }
 
-#musicFrame, #mainFrame {
+#mainFrame, #musicContainer {
 	
   
   width: 100%;
@@ -472,17 +472,12 @@ iframe.music {
 	
 }
 
-/* #musicFram { */
-	
-	/* height: 500px; */
-/* } */
-
-#musiccontainer {
-	pointer-events: none;
-	position:relative;
-	display: block;
-	z-index:1;
+.musicFrame {
+	position: relative;
+	width: 100%;
 }
+	
+
 
 .loading {
 	background: white /*url(../content/loading.gif) center top no-repeat*/;

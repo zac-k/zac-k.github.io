@@ -13,7 +13,7 @@
 
 	</head>
 	
-	<body onload="$(mainLoading).hide(); sendHeight();">
+	<body onload="$(mainLoading).hide(); sendHeight({frame_id: 'houseFrame'});">
 		
 	<div id=main>
 		
@@ -21,7 +21,7 @@
 				<div class="loader">Loading...</div>
 		</div>
 		<script>
-			sendHeight("200px");
+			sendHeight({value: "200px", frame_id: 'houseFrame'});
 		</script>
 		
 			<br>

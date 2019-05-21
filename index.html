@@ -12,11 +12,11 @@
 		<script>
 			$(document).ready(function(){
 				window.addEventListener('message', function(event) { 
-					<!-- // IMPORTANT: Check the origin of the data!  -->
-					<!-- if (event.origin.indexOf('zac-k.github.io')) {  -->
+					// IMPORTANT: Check the origin of the data!
+					//if (event.origin.indexOf('zac-k.github.io')) {
 					if (true) { <!--Need to fix this!!! -->
-						console.log(event.origin.indexOf('zac-k.github.io'));			
-						console.log(event.origin.indexOf('www.google.com'));
+						// console.log(event.origin.indexOf('zac-k.github.io'));
+						// console.log(event.origin.indexOf('www.google.com'));
 							// The data has been sent from your site 
 						var data = event.data;
 						switch (data.label){
@@ -68,7 +68,7 @@
 			generateBanner("banner", 0.4, 'fixed');
 		</script>
 		
-			
+
 	<nav  id=bar>
 				<ul>
 					<li class="active list_item" onclick="setActive(this)"><a class="active" href="about.html" target="mainFrame">Home</a></li>	        	

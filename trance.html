@@ -12,7 +12,7 @@
 		<script type="text/javascript" src="scripts/utils.js"></script>
 	</head>
 	
-	<body onload="$(mainLoading).hide(); sendHeight();">
+	<body onload="$(mainLoading).hide(); sendHeight({frame_id: 'tranceFrame'});">
 		
 		
 		
@@ -25,7 +25,7 @@
 				<div class="loader">Loading...</div>
 			</div>
 			<script>
-				sendHeight("200px");
+				sendHeight({value: "200px", frame_id: 'tranceFrame'});
 			</script>
 			
 			<!-- <script>

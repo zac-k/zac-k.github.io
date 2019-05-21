@@ -119,28 +119,29 @@
 	}
 	
 	function sendHeight(elem) {
-		
+	    /* Send page height data to the parent */
+        var msg = {};
 		switch (typeof elem){
-			case "undefined":
+            case "undefined":
 				var height = document.getElementsByTagName("BODY")[0].scrollHeight;
+                msg.label = 'height';
+				msg.value = height;
 				break;
 			case "string":
-				height = elem;
-				break;			
+                msg.label = 'height';
+				msg.value = elem;
+				break;
+            case "object":
+                msg = elem;
+                if(!msg.hasOwnProperty('value')){
+                    var height = document.getElementsByTagName("BODY")[0].scrollHeight;
+                    msg.value = height;
+                }
 		}
-		// if(typeof elem==="undefined"){
-			// console.log("elem undefined");
-			// var height = document.getElementsByTagName("BODY")[0].scrollHeight;
-		// }else if(ty{
-		// }else{
-			//elem = JSON.parse(JSON.stringify(elem));
-			// console.log(elem);
-			// var height = elem.offsetHeight;
-			// console.log(height);
-			// height = "200px";
-		// }
-			
-		parent.postMessage({label: 'height', value:height}, '*');
+		msg.label = 'height';
+        //console.log("height msg sent to parent: " + msg);
+		parent.postMessage(msg, '*');
+
 	}
 	
 	function sendTitle() {
@@ -160,6 +161,24 @@
 			removeCvFormats(item);
 		}
 		
+	}
+	
+	
+	function setGenre(elem) {
+	    var elem_id ="#" + elem + "Frame";
+		console.log($(elem_id));
+		$(elem_id).show(); // This line not working for some reason!
+		$(elem_id).addClass('active');
+
+		$('.musicFrame').each(
+			function(){
+			    if(this.id!==elem+"Frame"){
+                    $(this).removeClass('active');
+					$(this).hide();
+				}
+			}
+		);
+		sendHeight();
 	}
 	
 	function setDataStellarBackgroundRatio(elem) {
