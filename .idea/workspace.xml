@@ -3,11 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="abf48ebb-c805-4ce4-91e2-5cf525c34a07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/cv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/help.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/house.html" beforeDir="false" afterPath="$PROJECT_DIR$/house.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media.html" beforeDir="false" afterPath="$PROJECT_DIR$/media.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music.html" beforeDir="false" afterPath="$PROJECT_DIR$/music.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publications.html" beforeDir="false" afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trance.html" beforeDir="false" afterPath="$PROJECT_DIR$/trance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software.html" beforeDir="false" afterPath="$PROJECT_DIR$/software.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +31,20 @@
         <splitter split-orientation="horizontal" split-proportion="0.42716858">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/music.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="459">
-                      <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+                    <state relative-caret-position="208">
+                      <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/publications.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="225">
+                      <caret line="56" column="2924" selection-start-line="56" selection-start-column="2924" selection-end-line="56" selection-end-column="2924" />
                     </state>
                   </provider>
                 </entry>
@@ -36,8 +52,8 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/index.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="323">
-                      <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+                    <state relative-caret-position="293">
+                      <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
                     </state>
                   </provider>
                 </entry>
@@ -49,17 +65,17 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/trance.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="238">
-                      <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+                    <state relative-caret-position="225">
+                      <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/house.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="544">
-                      <caret line="32" column="68" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
+                    <state relative-caret-position="438">
+                      <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
                     </state>
                   </provider>
                 </entry>
@@ -67,8 +83,8 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/drum_and_bass.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="408">
-                      <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+                    <state relative-caret-position="225">
+                      <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
                     </state>
                   </provider>
                 </entry>
@@ -76,17 +92,22 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/other_genres.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="408">
+                    <state relative-caret-position="381">
                       <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+                      <folding>
+                        <element signature="e#417#424#1" expanded="true" />
+                        <element signature="e#567#574#1" expanded="true" />
+                        <element signature="e#132#138#0" expanded="true" />
+                      </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/remixes.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="782">
-                      <caret line="46" selection-start-line="46" selection-end-line="46" />
+                    <state relative-caret-position="527">
+                      <caret line="30" column="151" selection-start-line="30" selection-start-column="151" selection-end-line="30" selection-end-column="151" />
                     </state>
                   </provider>
                 </entry>
@@ -99,11 +120,65 @@
         <splitter split-orientation="horizontal" split-proportion="0.42498636">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/css/main.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="463">
-                      <caret line="486" column="24" selection-start-line="486" selection-start-column="24" selection-end-line="486" selection-end-column="24" />
+                    <state relative-caret-position="310">
+                      <caret line="167" column="20" lean-forward="true" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/software.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="170">
+                      <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/contact.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="170">
+                      <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/about.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="170">
+                      <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/cv.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="170">
+                      <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/help.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="170">
+                      <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/media.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="204">
+                      <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
                     </state>
                   </provider>
                 </entry>
@@ -115,8 +190,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/scripts/utils.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="264">
-                      <caret line="176" column="50" lean-forward="true" selection-start-line="175" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
+                    <state relative-caret-position="332">
+                      <caret line="171" column="55" selection-start-line="171" selection-start-column="55" selection-end-line="171" selection-end-column="55" />
                     </state>
                   </provider>
                 </entry>
@@ -138,7 +213,12 @@
       <find>trancefr</find>
       <find>hide()</find>
       <find>iframe</find>
+      <find>id</find>
+      <find>bug</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -146,15 +226,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/drum_and_bass.html" />
         <option value="$PROJECT_DIR$/other_genres.html" />
         <option value="$PROJECT_DIR$/remixes.html" />
         <option value="$PROJECT_DIR$/trance.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/scripts/utils.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/house.html" />
         <option value="$PROJECT_DIR$/music.html" />
+        <option value="$PROJECT_DIR$/publications.html" />
+        <option value="$PROJECT_DIR$/software.html" />
+        <option value="$PROJECT_DIR$/contact.html" />
+        <option value="$PROJECT_DIR$/about.html" />
+        <option value="$PROJECT_DIR$/cv.html" />
+        <option value="$PROJECT_DIR$/help.html" />
+        <option value="$PROJECT_DIR$/media.html" />
       </list>
     </option>
   </component>
@@ -237,12 +324,12 @@
       <workItem from="1558515285753" duration="1097000" />
       <workItem from="1558525884305" duration="11345000" />
       <workItem from="1558594660818" duration="1958000" />
-      <workItem from="1558645981985" duration="1174000" />
+      <workItem from="1558645981985" duration="2823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38385000" />
+    <option name="totallyTimeSpent" value="40034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2106" y="-364" width="2115" height="1641" extended-state="0" />
@@ -271,66 +358,120 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trance.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drum_and_bass.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/other_genres.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remixes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="486" column="24" selection-start-line="486" selection-start-column="24" selection-end-line="486" selection-end-column="24" />
+        <state relative-caret-position="310">
+          <caret line="167" column="20" lean-forward="true" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="176" column="50" lean-forward="true" selection-start-line="175" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
+        <state relative-caret-position="332">
+          <caret line="171" column="55" selection-start-line="171" selection-start-column="55" selection-end-line="171" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/house.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="68" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
+        <state relative-caret-position="438">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/music.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+        <state relative-caret-position="208">
+          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="56" column="2924" selection-start-line="56" selection-start-column="2924" selection-end-line="56" selection-end-column="2924" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/software.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cv.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/help.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drum_and_bass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other_genres.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+          <folding>
+            <element signature="e#417#424#1" expanded="true" />
+            <element signature="e#567#574#1" expanded="true" />
+            <element signature="e#132#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remixes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="30" column="151" selection-start-line="30" selection-start-column="151" selection-end-line="30" selection-end-column="151" />
         </state>
       </provider>
     </entry>

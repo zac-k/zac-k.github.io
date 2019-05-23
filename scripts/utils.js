@@ -158,10 +158,18 @@
 		$(item).parent().find('.list_item').each(function(){$(this).removeClass('active');$(this).find('a').removeClass('active');});
 		$(item).addClass('active');
 		$(item).find('a').addClass('active');
+
+
 		if(item.id==="cv"){
 			addCvFormats(item);
 		}else{
 			removeCvFormats(item);
+		}
+
+		if(item.id==="software"){
+			$(bug_feature).css('visibility', 'visible');
+		}else{
+			$(bug_feature).css('visibility', 'hidden');
 		}
 		
 	}
