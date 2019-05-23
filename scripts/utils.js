@@ -173,17 +173,11 @@
 			function(){
 			    if(this.id==elem+"Frame") {
 					$(this).addClass('active');
-					$(this).show();
-					var this_frame = document.getElementById(elem+"Frame");
-                    console.log(this_frame);
-					$(this_frame).contentWindow.postMessage({label: 'height_request'}, '*'); // not working yet
+                    // console.log($(this).prop('contentWindow'));
+					// $(this).prop('contentWindow').postMessage({label: 'height_request'}, '*'); // not working yet
 				}else{
 						$(this).removeClass('active');
-						$(this).hide();
-
 				}
-			    console.log("this:")
-				console.log(this);
 			}
 		);
 		sendHeight();

@@ -18,6 +18,7 @@
 			$(document).ready(function(){
 					window.addEventListener('message', function(event) { 
 						var data = event.data;
+						console.log(data.origin);
 						switch (data.label){
 							case 'height':
 								var frameHeight = data.value;
@@ -114,7 +115,10 @@
 		<p>
 		Just some of my music&mdash;all produced using softsynths (<i>Spire</i> is my current go-to) and a DAW (usually Bitwig at the moment). Stylistically, most of my music falls under the broad umbrella of "trance", but I've been branching out a bit lately with some house, drum and bass, and other genres (not all posted yet). Except where otherwise stated, vocals are from royalty-free sample packs. Hover over genre to see the description, and hover over a track to see my own thoughts about it.
 
-			(Note: Please be patient while the tracks load. I'm currently experimenting with different ways of loading. At the moment, all tracks will load in the background when you are on the music page, meaning you can switch between genres without having to wait for it to load again, but with the drawback that the initial loading is long.)
+			<br>
+			<br>
+
+			<b>Nb: Please be patient while the tracks load. I'm currently experimenting with different ways of loading. At the moment, all tracks will load in the background when you are on the music page, meaning you can switch between genres without having to wait for it to load again, but with the drawback that the initial loading is long.</b>
 		</p>
 		
 		<!-- <input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input> -->
@@ -168,15 +172,15 @@
 			
 		<!-- </div> -->
 		<div id="musiccontainer">
-			<iframe scrolling="no" src="./trance.html" frameborder="0" allowtransparency="true" class="musicFrame active" name="musicFrame" id="tranceFrame"}></iframe>
+			<iframe scrolling="no" src="./trance.html" frameborder="0" allowtransparency="true" class="musicFrame active" name="musicFrame" id="tranceFrame"></iframe>
 			
-			<iframe scrolling="no" src="./house.html" frameborder="0" allowtransparency="true" class="musicFrame" name="musicFrame" id="houseFrame" onload="$(this).hide();"></iframe>
+			<iframe scrolling="no" src="./house.html" frameborder="0" allowtransparency="true" class="musicFrame" name="musicFrame" id="houseFrame"></iframe>
 			
-			<iframe scrolling="no" src="./drum_and_bass.html" frameborder="0" allowtransparency="true" class="musicFrame" name="musicFrame" id="drumAndBassFrame" onload="$(this).hide();"></iframe>
+			<iframe scrolling="no" src="./drum_and_bass.html" frameborder="0" allowtransparency="true" class="musicFrame" name="musicFrame" id="drumAndBassFrame"></iframe>
 			
-			<iframe scrolling="no" src="./other_genres.html" frameborder="0" allowtransparency="true" class="musicFrame" name="musicFrame" id="otherGenresFrame" onload="$(this).hide();"></iframe>
+			<iframe scrolling="no" src="./other_genres.html" frameborder="0" allowtransparency="true" class="musicFrame" name="musicFrame" id="otherGenresFrame"></iframe>
 			
-			<iframe scrolling="no" src="./remixes.html" frameborder="0" allowtransparency="true" class="musicFrame" name="musicFrame" id="remixesFrame" onload="$(this).hide();"></iframe>
+			<iframe scrolling="no" src="./remixes.html" frameborder="0" allowtransparency="true" class="musicFrame" name="musicFrame" id="remixesFrame"></iframe>
 		</div>
 		
 		

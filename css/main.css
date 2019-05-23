@@ -477,12 +477,14 @@ iframe.music {
 	position: absolute;
 	width: 100%;
     top: 0%;
+    visibility: hidden;
 }
 
 .musicFrame.active {
     position: relative;
     width: 100%;
     top: 0%;
+    visibility: visible;
 }
 	
 
