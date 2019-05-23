@@ -152,6 +152,9 @@
 	
 	
 	function setActive(item) {
+		/* This is for the main menu bar. The one in music.html is for the music bar.
+			These should be combined to avoid confusion.
+			 */
 		$(item).parent().find('.list_item').each(function(){$(this).removeClass('active');$(this).find('a').removeClass('active');});
 		$(item).addClass('active');
 		$(item).find('a').addClass('active');
@@ -165,21 +168,33 @@
 	
 	
 	function setGenre(elem) {
-	    var elem_id ="#" + elem + "Frame";
-		console.log($(elem_id));
-		$(elem_id).show(); // This line not working for some reason!
-		$(elem_id).addClass('active');
 
 		$('.musicFrame').each(
 			function(){
-			    if(this.id!==elem+"Frame"){
-                    $(this).removeClass('active');
-					$(this).hide();
+			    if(this.id==elem+"Frame") {
+					$(this).addClass('active');
+					$(this).show();
+					var this_frame = document.getElementById(elem+"Frame");
+                    console.log(this_frame);
+					$(this_frame).contentWindow.postMessage({label: 'height_request'}, '*'); // not working yet
+				}else{
+						$(this).removeClass('active');
+						$(this).hide();
+
 				}
+			    console.log("this:")
+				console.log(this);
 			}
 		);
 		sendHeight();
 	}
+
+    function getFrameById(id) {
+        for (var i=0;i<window.length;i++) {
+            if (window[i].frameElement.id===id) return window[i];
+        }
+        return null;
+    }
 	
 	function setDataStellarBackgroundRatio(elem) {
 		var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);

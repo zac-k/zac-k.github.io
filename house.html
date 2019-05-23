@@ -9,6 +9,53 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts/utils.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				window.addEventListener('message', function(event) {
+					var data = event.data;
+					switch (data.label){
+						case 'height':
+							var frameHeight = data.value;
+							document.getElementById(data.frame_id).height = frameHeight;
+							if(data.frame_id==$('.musicFrame.active')[0].id){
+								sendHeight();
+							}
+
+							break;
+						case 'overlay':
+							if (data.value) {
+								$(overlay_surround).css('opacity', 0.6);
+							} else {
+								$(overlay_surround).css('opacity', 0);
+							}
+							break;
+						case 'height_request':
+							sendHeight();
+					}
+
+					/*// IMPORTANT: Check the origin of the data!
+					if (~event.origin.indexOf('zac-k.github.io')) {
+						// The data has been sent from your site
+
+						// The data sent with postMessage is stored in event.data
+						document.getElementById("musicFrame").height = frameHeight;
+					} else {
+						// The data hasn't been sent from your site!
+						// Be careful! Do not use it.
+						return;
+					}*/
+
+					parent.postMessage({label: 'script', value: "$(bug_feature).css('visibility', 'hidden');"}, '*');
+
+				});
+
+
+
+
+
+			});
+		</script>
 		
 
 	</head>
