@@ -14,7 +14,7 @@
 
 	</head>
 	
-	<body onload="$(mainLoading).hide(); sendHeight({frame_id: 'drumAndBassFrame'});">
+	<body onload="$(mainLoading).hide(); parent.postMessage({label: 'isLoading', value: false}, '*'); sendHeight({frame_id: 'drumAndBassFrame'});">
 		
 	<div id=main>
 		

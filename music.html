@@ -34,6 +34,14 @@
 								} else {
 									$(overlay_surround).css('opacity', 0);
 								}
+								break;
+							case 'isLoading':
+								if (data.value) {
+									$('#loading_info').show();
+								}else {
+									$('#loading_info').hide();
+								}
+								break;
 						}
 
 					/*// IMPORTANT: Check the origin of the data!
@@ -105,6 +113,7 @@
 			<br>
 			I've been producing music for probably over two decades, and although my production skills are ever improving, there are tracks that I created early on that I still love and want to include here both because I think they're great in their own right, and also to show the evolution of my style. However, they tend not to fit neatly into genres like a lot of what I produce today, so this section is where most of them are likely to end up. </span>
 			</div>
+			</div>
 		-->
 		
 				
@@ -116,8 +125,10 @@
 
 			<br>
 			<br>
+		<div id=loading_info>
 
-			<b>Nb: Please be patient while the tracks load. I'm currently experimenting with different ways of loading. At the moment, all tracks will load in the background when you are on the music page, meaning you can switch between genres without having to wait for it to load again, but with the drawback that the initial loading is long.</b>
+			<b>Nb: Please be patient while the tracks load (it usually takes about thirty seconds, but might be longer if your connection is slow). I'm currently experimenting with different ways of loading. At the moment, all tracks will load in the background when you are on the music page, meaning you can switch between genres without having to wait for it to load again, but with the drawback that the initial loading is long.</b>
+	</div>
 		</p>
 		
 		<!-- <input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input> -->

@@ -12,8 +12,7 @@
 		<script type="text/javascript" src="scripts/utils.js"></script>
 	</head>
 
-	<body onload="$(mainLoading).hide(); sendHeight({frame_id: 'tranceFrame'});">
-
+	<body onload="$(mainLoading).hide(); parent.postMessage({label: 'isLoading', value: false}, '*'); sendHeight({frame_id: 'tranceFrame'});">
 
 
 				
